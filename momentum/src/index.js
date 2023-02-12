@@ -1,3 +1,5 @@
+import {BB} from './js/Date';
+
 const timeBlock = document.querySelector('.time');
 const dateBlock = document.querySelector('.date');
 const greetingBlock = document.querySelector('.greeting');
@@ -21,7 +23,6 @@ const showDate = () => {
     const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Moscow'};
     dateBlock.textContent = upperCaseFirst(date.toLocaleDateString('ru-RU', options));
 }
-
 const getTimeOfDay = (hours) => {
     if (hours < 6) return 'night';
     if (hours < 12) return 'morning';
@@ -32,8 +33,7 @@ const getTimeOfDay = (hours) => {
 const showGreeting = () => {
     const date = new Date();
     const hours = date.getHours();
-    const greetingText = `Good ${getTimeOfDay(hours)}`;
-
+    const greetingText = `Good ${getTimeOfDay(hours)},`;
     greetingBlock.textContent = greetingText;
 }
 

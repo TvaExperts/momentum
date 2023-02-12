@@ -1,0 +1,16 @@
+{
+  "name": "tvaexperts",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {},
+  
+  "scripts": {
+    "dev": "webpack --watch --mode development",
+    "prod": "webpack --mode production"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
