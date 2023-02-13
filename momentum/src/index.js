@@ -19,7 +19,9 @@ const autorBlock = document.querySelector('.author');
 const changeQuoteBlock = document.querySelector('.change-quote');
 
 
-const WEATHER_API_KEY='7084f9129f59e9d3a287c7606d73e5ba';
+const WEATHER_API_KEY = '7084f9129f59e9d3a287c7606d73e5ba';
+const UNSPLASH_API_KEY = 'yw2PXnVSDFGPpRVYC-NpSCm-ggZXLbGimG_gLiCmzak';
+
 
 
 
@@ -34,6 +36,8 @@ window.addEventListener('load', () => {
 });
 
 
+
+
 // ****************** Local Storage ********************
 
 const getLocalStorage = () => {
@@ -45,6 +49,14 @@ const getLocalStorage = () => {
 const setLocalStorage = () => {
     localStorage.setItem('name', nameBlock.value);
 }
+
+// ****************** Staff ********************
+
+const getRandomInt = (max) => {
+    return Math.floor(Math.random() * max);
+}
+
+
 
 // ****************** Name Imput Block ********************
 
@@ -86,10 +98,29 @@ showTime();
 
 // ****************** BG Image ********************
 
-const getRandomInt = (max) => {
-    return Math.floor(Math.random() * max);
+async function setWebBg () {
+    const urlImage = await getLinkToImage();
+    const img = new Image();
+    img.src = urlImage;
+    img.onload = () => {      
+        bodyBlock.style.backgroundImage = `url('${urlImage}')`;
+    }; 
 }
 
+async function getLinkToImage() {
+    const timeOfDay = getTimeOfDay();
+    const url = `https://api.unsplash.com/photos/random?query=${timeOfDay}&client_id=${UNSPLASH_API_KEY}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    return data.urls.regular;
+}
+
+setWebBg();
+
+slideNext.addEventListener('click', setWebBg);
+slidePrev.addEventListener('click', setWebBg);
+
+/*
 let randomImageNum = getRandomInt(20) + 1;
 
 const setBg = (timeOfDay, bgNum) => {
@@ -99,7 +130,6 @@ const setBg = (timeOfDay, bgNum) => {
     img.onload = () => {      
         bodyBlock.style.backgroundImage = `url('${urlImage}')`;
     }; 
-   
 }
 
 setBg(getTimeOfDay(),randomImageNum);
@@ -115,33 +145,34 @@ const getSlidePrev = () => {
     randomImageNum--;
     if (randomImageNum<1) randomImageNum=20;
     setBg(getTimeOfDay(),randomImageNum);
-}
-
-slideNext.addEventListener('click', getSlideNext);
-slidePrev.addEventListener('click', getSlidePrev);
-
-
+}*/
 
 // ****************** Weather ********************
 
+const convertInStrTemperature = (temperature) => {
+    temperature = Math.round(temperature);
+    let strTemperature = temperature.toString();
+    if (temperature>0) strTemperature = '+' + strTemperature;
+    return strTemperature;
+}
+
 async function getWeather() {  
-    
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityBlock.value}&lang=ru&appid=${WEATHER_API_KEY}&units=metric`;
     const res = await fetch(url);
     const data = await res.json(); 
     weatherIconBlock.className = 'weather-icon owf';
     weatherIconBlock.classList.add(`owf-${data.weather[0].id}`);
-    temperatureBlock.textContent = `${Math.round(data.main.temp)}°C`;
+    temperatureBlock.textContent = `${convertInStrTemperature(data.main.temp)}°C`;
     weatherDescriptionBlock.textContent = upperCaseFirst(data.weather[0].description);
-    
 }
+
 getWeather(); 
 
 cityBlock.addEventListener('change', getWeather);
 
 // ****************** Quotes ********************
 
-let numQuote=0;
+let numQuote = 0;
 
 const getNewNumQuote = (max) => {
     if (max === 1) return 0;
