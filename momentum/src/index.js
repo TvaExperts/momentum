@@ -8,6 +8,12 @@ const slideNext = document.querySelector('.slide-next');
 const slidePrev = document.querySelector('.slide-prev');
 const bodyBlock = document.body;
 
+
+const weatherIconBlock = document.querySelector('.weather-icon');
+const temperatureBlock = document.querySelector('.temperature');
+const weatherDescriptionBlock = document.querySelector('.weather-description');
+const cityBlock = document.querySelector('.city');
+
 const WEATHER_API_KEY='7084f9129f59e9d3a287c7606d73e5ba';
 
 
@@ -113,11 +119,19 @@ slidePrev.addEventListener('click', getSlidePrev);
 
 // ****************** Weather ********************
 
-async function getWeather(city) {  
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&appid=${WEATHER_API_KEY}&units=metric`;
+async function getWeather() {  
+    
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityBlock.value}&lang=ru&appid=${WEATHER_API_KEY}&units=metric`;
     const res = await fetch(url);
     const data = await res.json(); 
-    console.log(data.weather[0].id, data.weather[0].description, data.main.temp);
-  }
+    weatherIconBlock.className = 'weather-icon owf';
+    weatherIconBlock.classList.add(`owf-${data.weather[0].id}`);
+    temperatureBlock.textContent = `${Math.round(data.main.temp)}°C`;
+    weatherDescriptionBlock.textContent = upperCaseFirst(data.weather[0].description);
+    
+}
+getWeather(); 
 
-  //getWeather();
+cityBlock.addEventListener('change', getWeather);
+
+
