@@ -14,6 +14,11 @@ const temperatureBlock = document.querySelector('.temperature');
 const weatherDescriptionBlock = document.querySelector('.weather-description');
 const cityBlock = document.querySelector('.city');
 
+const quoteBlock = document.querySelector('.quote');
+const autorBlock = document.querySelector('.author');
+const changeQuoteBlock = document.querySelector('.change-quote');
+
+
 const WEATHER_API_KEY='7084f9129f59e9d3a287c7606d73e5ba';
 
 
@@ -133,5 +138,32 @@ async function getWeather() {
 getWeather(); 
 
 cityBlock.addEventListener('change', getWeather);
+
+// ****************** Quotes ********************
+
+let numQuote=0;
+
+const getNewNumQuote = (max) => {
+    if (max === 1) return 0;
+    let newNumQuote = getRandomInt(max);
+    while (newNumQuote === numQuote) {
+        newNumQuote = getRandomInt(max);
+    }
+   return newNumQuote;
+}
+
+async function getQuotes() {  
+    const quotes = '../momentum/assets/quotes.json';
+    const res = await fetch(quotes);
+    const data = await res.json(); 
+    numQuote=getNewNumQuote(data.length);
+    quoteBlock.textContent = data[numQuote].text;
+    autorBlock.textContent = data[numQuote].author;
+}
+getQuotes();
+
+changeQuoteBlock.addEventListener('click', getQuotes);
+
+
 
 
