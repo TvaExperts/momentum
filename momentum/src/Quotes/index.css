@@ -1,0 +1,19 @@
+.quotes__wrraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.change-quote {
+  margin-bottom: 30px;
+  background-image: url("../../assets/svg/reload.svg");  
+}
+
+.quote {
+  min-height: 32px;
+}
+
+.author {
+  min-height: 20px;
+}

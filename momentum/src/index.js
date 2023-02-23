@@ -1,5 +1,33 @@
-import {BB} from './js/Date';
+import Greating from './Greating';
+import Background from './Background';
+import Player from './Player';
+import Weather from './Weather';
+import Quotes from './Quotes';
 
+import '../css/style.css';
+
+const headerBlock = document.querySelector('.header');
+const mainBlock = document.querySelector('.main');
+const footerBlock = document.querySelector('.footer');
+
+headerBlock.append(Player);
+headerBlock.append(Weather);
+
+mainBlock.append(Background);
+mainBlock.append(Greating);
+
+footerBlock.append(Quotes);
+
+
+
+
+
+
+
+
+
+
+/*
 const timeBlock = document.querySelector('.time');
 const dateBlock = document.querySelector('.date');
 const greetingBlock = document.querySelector('.greeting');
@@ -19,12 +47,12 @@ const autorBlock = document.querySelector('.author');
 const changeQuoteBlock = document.querySelector('.change-quote');
 
 
-const WEATHER_API_KEY = '7084f9129f59e9d3a287c7606d73e5ba';
+
 const UNSPLASH_API_KEY = 'yw2PXnVSDFGPpRVYC-NpSCm-ggZXLbGimG_gLiCmzak';
 
 
 
-
+/*
 // ****************** Load and Unload Doc ********************
 
 window.addEventListener('beforeunload', () => {
@@ -145,7 +173,7 @@ const getSlidePrev = () => {
     randomImageNum--;
     if (randomImageNum<1) randomImageNum=20;
     setBg(getTimeOfDay(),randomImageNum);
-}*/
+}
 
 // ****************** Weather ********************
 
@@ -195,6 +223,6 @@ getQuotes();
 
 changeQuoteBlock.addEventListener('click', getQuotes);
 
-
+*/
 
 
