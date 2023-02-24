@@ -1,6 +1,6 @@
 const playList = [
     {      
-      title: 'Aqua Caelestis',
+      title: 'Aqua Caelestis Aqua Caelestis Aqua Caelestis Aqua Caelestis Aqua Caelestis ',
       src: './sounds/Aqua Caelestis.mp3',
       duration: '00:39'
     },  
