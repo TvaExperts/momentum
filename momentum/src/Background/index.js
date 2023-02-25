@@ -10,8 +10,8 @@ const UNSPLASH_API_KEY = 'yw2PXnVSDFGPpRVYC-NpSCm-ggZXLbGimG_gLiCmzak';
 const FLICKR_API_KEY = 'e42abac3a12ae59ea2cda0d295b92890';
 
 
-const conf = 'flickr';
-const tag = 'sea';
+
+
 
 const getRandomInt = (max) => {
     return Math.floor(Math.random() * max);
@@ -32,9 +32,11 @@ async function getLinkToImage() {
     
     let urlGet;
     let urlImage;
-    if (!tag) tag = getTimeOfDay();
+    let tag='';
+    const timeOfDay = getTimeOfDay();
+    if (!localStorage.getItem('photo-tag')) tag = timeOfDay;
 
-    switch (conf) {
+    switch (localStorage.getItem('photo-source')) {
         case 'unsplash': 
             urlGet = `https://api.unsplash.com/photos/random?query=${tag}&client_id=${UNSPLASH_API_KEY}`;
             const res = await fetch(urlGet);
@@ -54,7 +56,6 @@ async function getLinkToImage() {
     return urlImage;
 }
 
-
 const getTimeOfDay = () => {
     const date = new Date();
     const hours = date.getHours();
@@ -67,7 +68,7 @@ const getTimeOfDay = () => {
 setBg();
 
 const getSlideNext = () => {
-    if (conf==='local') {
+    if (localStorage.getItem('photo-source')==='github') {
         randomImageNum++;
         if (randomImageNum>20) randomImageNum=1;
     }
@@ -75,7 +76,7 @@ const getSlideNext = () => {
 }
 
 const getSlidePrev = () => {
-    if (conf==='local') {
+    if (localStorage.getItem('photo-source')==='github') {
         randomImageNum--;
         if (randomImageNum<1) randomImageNum=20;
     }
@@ -86,5 +87,3 @@ slideNext.addEventListener('click', getSlideNext);
 slidePrev.addEventListener('click', getSlidePrev);
 
 export default backgroundBlock;
-
-

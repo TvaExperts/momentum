@@ -31,7 +31,7 @@ const getNewNumQuote = (max) => {
 
 async function getQuotes() {  
     
-    const quotes = './json/quotes.json';
+    const quotes = `./json/${localStorage.getItem('language')}-quotes.json`;
     const res = await fetch(quotes);
     const data = await res.json(); 
     numQuote = getNewNumQuote(data.length);

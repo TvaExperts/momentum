@@ -34,7 +34,7 @@ module.exports = (env, options) => {
       new CopyPlugin({
         patterns: [
           { from: "assets/sounds", to: "sounds" },
-          { from: "assets/quotes.json", to: "json" },
+          { from: "assets/json", to: "json" },
           { from: "assets/images", to: "images" },
         ],})
     ],

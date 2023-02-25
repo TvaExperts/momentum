@@ -3,6 +3,7 @@ import Background from './Background';
 import Player from './Player';
 import Weather from './Weather';
 import Quotes from './Quotes';
+import Settings from './Settings';
 
 import '../css/style.css';
 
@@ -10,13 +11,17 @@ const headerBlock = document.querySelector('.header');
 const mainBlock = document.querySelector('.main');
 const footerBlock = document.querySelector('.footer');
 
+footerBlock.prepend(Quotes);
+footerBlock.prepend(Settings);
+
 headerBlock.append(Player);
 headerBlock.append(Weather);
 
 mainBlock.append(Background);
 mainBlock.append(Greating);
 
-footerBlock.append(Quotes);
+
+
 
 
 

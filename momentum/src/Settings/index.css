@@ -1,0 +1,91 @@
+.settings-ico {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-size: 32px 32px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/svg/settings.svg");
+  opacity: .8;
+
+}
+
+.settings {
+  position: absolute;
+  width: 220px;
+  height: 250px;
+  top: -250px;
+  background: rgba(55, 55, 54, 0.719);
+}
+
+.setting-list {
+  padding: 5px;
+  list-style-type: none; 
+}
+
+.settings-item {
+  padding: 3px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.api-tag {
+  width: 60px;
+  opacity: .8;
+  
+}
+
+.select {
+  width: 90px;
+  background-color: gray;
+  color: white;
+}
+
+
+.checkbox {
+  --width: 55px;
+  --height: 20px;
+  --first-color: gray;
+  --second-color: rgb(255, 255, 255);
+  --offset: 3px;
+  cursor: pointer;
+
+}
+
+.checkbox-wrapper {
+  display: inline-block;
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--width);
+  background-color: var(--first-color);
+}
+
+.checkbox-input {
+  
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none ;
+}
+
+.checkbox-input:checked ~ .checkbox-wrapper {
+  background-color: var(--second-color);
+}
+
+.checkbox-input:checked ~ .checkbox-wrapper:before {
+  background-color: var(--first-color);
+  left: calc(var(--width) - var(--height) + var(--offset));
+}
+
+.checkbox-wrapper:before {
+  content: '';
+  position:absolute;
+  top: var(--offset);
+  left: var(--offset);
+  width: calc(var(--height) - 2 * var(--offset));
+  height: calc(var(--height) - 2 * var(--offset));
+  background-color: var(--second-color);
+  border-radius: 50%;
+  transition: all .3s;
+}
