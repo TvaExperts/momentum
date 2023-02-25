@@ -1,6 +1,6 @@
 const playList = [
     {      
-      title: 'Aqua Caelestis Aqua Caelestis Aqua Caelestis Aqua Caelestis Aqua Caelestis ',
+      title: 'Long name - Aqua Caelestis Aqua Caelestis Aqua Caelestis Aqua Caelestis Aqua Caelestis ',
       src: './sounds/Aqua Caelestis.mp3',
       duration: '00:39'
     },  
@@ -16,7 +16,7 @@ const playList = [
     }, 
     {      
       title: 'Summer Wind',
-      src: './sounds/Aqua Caelestis.mp3',
+      src: './sounds/Summer Wind.mp3',
       duration: '01:50'
     }, 
   ]

@@ -35,6 +35,7 @@ module.exports = (env, options) => {
         patterns: [
           { from: "assets/sounds", to: "sounds" },
           { from: "assets/quotes.json", to: "json" },
+          { from: "assets/images", to: "images" },
         ],})
     ],
 

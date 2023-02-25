@@ -29,6 +29,43 @@
   width: 200px;
 }
 
+.volume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.volume-ico {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  opacity: .8;
+  background-size: 20px 20px;
+  background-image: url("../../assets/svg/volume.svg");
+  background-repeat: no-repeat;
+}
+
+.mute {
+  background-image: url("../../assets/svg/volume-mute.svg");
+}
+
+.volume-bar {
+
+  width: 70px;
+  height: 5px;
+  margin-left: 10px;
+  display: inline-block;
+  opacity: .8;
+  background: #929292;
+}
+
+.volume-bar-fill {
+  width: 70;
+  height: 5px;
+  background: white;
+}
+
 .progress-bar {
   width: 320px;
   margin: 9px 0;
@@ -79,6 +116,7 @@
   background-size: 15px 15px;
   background-image: url("../../assets/svg/play.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .play-title {

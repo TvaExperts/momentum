@@ -21,10 +21,55 @@ let isPlay = false;
 let numSong = 0;
 let currentTime = 0;
 let isRunUpdater = false;
+let volumeValue = 1;
 
 
+const progressBlock = player.querySelector('.progress-bar');
+
+const clickProgress = (event) => {
+  const percentage = (event.x - 20) / 320;
+  const newTime = convertSongDurationInSec(playList[numSong].duration) * percentage;
+  currentTime = newTime;
+  audio.currentTime = currentTime;
+  updateInfo();
+  playAudio();
+}
+progressBlock.addEventListener('click', clickProgress);
 
 
+const volumeIco = player.querySelector('.volume-ico');
+
+
+const toggleMute = () => {
+  volumeIco.classList.toggle('mute');
+  if (audio.muted) {
+    audio.muted=false;
+    showVolumeValue();
+  } else {
+    audio.muted = true;
+    volumeFill.style.width = `0px`;
+  }
+  
+}
+
+volumeIco.addEventListener('click', toggleMute)
+
+const volumeFill = player.querySelector('.volume-bar-fill');
+const volumeBar = player.querySelector('.volume-bar');
+
+const showVolumeValue = () => {
+  const fillWidth = Math.round(volumeValue* 70);
+  volumeFill.style.width = `${fillWidth}px`;
+}
+
+const setNewVolumeValue = (event) => {
+  
+  volumeValue = (event.x - 160) / 70;
+  audio.volume = volumeValue;
+  showVolumeValue();
+}
+
+volumeBar.addEventListener('click', setNewVolumeValue)
 
 const playAudio = () => {
   if (isPlay) {
@@ -46,6 +91,7 @@ const playAudio = () => {
   } else {
     audio.pause();
     currentTime = audio.currentTime;
+    
   }
   
 }
@@ -74,8 +120,10 @@ const clickBtnPlay = () => {
     removePauseMini();
     isPlay = false;
   } else {
+    showVolumeValue();
     playButton.classList.add('pause');
     isPlay = true;
+    
     addPauseMini();
   }
   updateInfo();
@@ -141,12 +189,15 @@ const updateInfo = () =>
   const durationInfo = player.querySelector('.duration');
   durationInfo.innerText = `${convertSecondsInMinStr(currTime)}/${playList[numSong].duration}`;
   showProgress();
+
 }
 
 const startUpdaterInfo = () => {
   updateInfo();
   setTimeout(startUpdaterInfo, 1000);
 }
+
+
 
 const clickBtnPrevSong = () => {
   clearActiveSongStile();
@@ -199,7 +250,7 @@ const addActiveSongStyle = () => {
   })
   updateInfo();
   const songTitle = player.querySelector('.song-title');
-  songTitle.innerHTML = createShortSongTitle(playList[numSong].title, 25);
+  songTitle.innerHTML = `${numSong+1}. ${createShortSongTitle(playList[numSong].title, 23)}`;
 }
 
 

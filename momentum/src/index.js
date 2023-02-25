@@ -148,33 +148,6 @@ setWebBg();
 slideNext.addEventListener('click', setWebBg);
 slidePrev.addEventListener('click', setWebBg);
 
-/*
-let randomImageNum = getRandomInt(20) + 1;
-
-const setBg = (timeOfDay, bgNum) => {
-    const urlImage=`https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${timeOfDay}/${bgNum.toString().padStart(2,'0')}.jpg`;
-    const img = new Image();
-    img.src = urlImage;
-    img.onload = () => {      
-        bodyBlock.style.backgroundImage = `url('${urlImage}')`;
-    }; 
-}
-
-setBg(getTimeOfDay(),randomImageNum);
-
-const getSlideNext = () => {
-    randomImageNum++;
-    if (randomImageNum>20) randomImageNum=1;
-    if (randomImageNum<1) randomImageNum=20;
-    setBg(getTimeOfDay(),randomImageNum);
-}
-
-const getSlidePrev = () => {
-    randomImageNum--;
-    if (randomImageNum<1) randomImageNum=20;
-    setBg(getTimeOfDay(),randomImageNum);
-}
-
 // ****************** Weather ********************
 
 const convertInStrTemperature = (temperature) => {
