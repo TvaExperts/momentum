@@ -1,0 +1,1179 @@
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/Background/index.html":
+/*!***********************************!*\
+  !*** ./src/Background/index.html ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Module
+var code = "<div class=\"slider-icons\">\r\n    <button class=\"slide-prev slider-icon\"></button>\r\n    <button class=\"slide-next slider-icon\"></button>\r\n  </div>";
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
+
+/***/ }),
+
+/***/ "./src/Greating/index.html":
+/*!*********************************!*\
+  !*** ./src/Greating/index.html ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Module
+var code = "<div class=\"greating__wrapper\">\r\n    <time class=\"time\"></time>\r\n    <date class=\"date\"></date>\r\n    <div class=\"greeting-container\">\r\n        <span class=\"greeting\"></span>\r\n        <input type=\"text\" class=\"name\" placeholder=\"Ваше имя...\"/>\r\n    </div>\r\n</div>";
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
+
+/***/ }),
+
+/***/ "./src/Player/index.html":
+/*!*******************************!*\
+  !*** ./src/Player/index.html ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Module
+var code = "<div class=\"player\">\r\n  <div class=\"player-header\">\r\n    <div class=\"player-controls\">\r\n      <button class=\"play-prev player-icon\"></button>\r\n      <button class=\"play player-icon\"></button>\r\n      <button class=\"play-next player-icon\"></button>\r\n    </div>\r\n    <div class=\"info\">\r\n      <div class=\"song-title\"> </div>\r\n      <div class=\"volume\">\r\n        <div class=\"volume-ico\"></div>\r\n        <div class=\"volume-bar\">\r\n          <div class=\"volume-bar-fill\"></div>\r\n        </div>\r\n      </div>\r\n      <div class=\"duration\">--:--/--:--</div> \r\n    </div>\r\n  </div>\r\n  <div class=\"progress-bar\">\r\n    <div class=\"progress-fill\"></div>\r\n  </div>\r\n  <ul class=\"play-list\"></ul>\r\n</div>";
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
+
+/***/ }),
+
+/***/ "./src/Quotes/index.html":
+/*!*******************************!*\
+  !*** ./src/Quotes/index.html ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Module
+var code = "<div class=\"quotes__wrraper \">\r\n    <button class=\"change-quote\"></button>\r\n    <div>\r\n      <div class=\"quote\"></div>\r\n      <div class=\"author\"></div>\r\n    </div>\r\n</div>";
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
+
+/***/ }),
+
+/***/ "./src/Weather/index.html":
+/*!********************************!*\
+  !*** ./src/Weather/index.html ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// Module
+var code = "<div class=\"weather\">\r\n    <input type=\"text\" class=\"city\" value=\"Минск\"/>\r\n    \r\n    <div class=\"weather-error\"></div>\r\n    <div class=\"description-container\">\r\n      <i class=\"weather-icon owf\"></i>\r\n      <span class=\"temperature\"></span>\r\n      <span class=\"weather-description\"></span>\r\n    </div>\r\n    <div class=\"wind\"></div>\r\n    <div class=\"humidity\"></div>\r\n  </div>";
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
+
+/***/ }),
+
+/***/ "./css/style.css":
+/*!***********************!*\
+  !*** ./css/style.css ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/Background/index.css":
+/*!**********************************!*\
+  !*** ./src/Background/index.css ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/Greating/index.css":
+/*!********************************!*\
+  !*** ./src/Greating/index.css ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/Player/index.css":
+/*!******************************!*\
+  !*** ./src/Player/index.css ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/Quotes/index.css":
+/*!******************************!*\
+  !*** ./src/Quotes/index.css ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/Weather/index.css":
+/*!*******************************!*\
+  !*** ./src/Weather/index.css ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/Weather/owfont-regular.css":
+/*!****************************************!*\
+  !*** ./src/Weather/owfont-regular.css ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/Background/index.js":
+/*!*********************************!*\
+  !*** ./src/Background/index.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ "./src/Background/index.css");
+/* harmony import */ var _utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/htmlToElement */ "./utils/htmlToElement.js");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.html */ "./src/Background/index.html");
+
+
+
+const backgroundBlock = (0,_utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__["default"])(_index_html__WEBPACK_IMPORTED_MODULE_2__["default"]);
+
+const slideNext = backgroundBlock.querySelector('.slide-next');
+const slidePrev = backgroundBlock.querySelector('.slide-prev');
+
+const UNSPLASH_API_KEY = 'yw2PXnVSDFGPpRVYC-NpSCm-ggZXLbGimG_gLiCmzak';
+const FLICKR_API_KEY = 'e42abac3a12ae59ea2cda0d295b92890';
+
+
+const conf = 'flickr';
+const tag = 'sea';
+
+const getRandomInt = (max) => {
+    return Math.floor(Math.random() * max);
+}
+
+let randomImageNum = getRandomInt(20) + 1;
+
+async function setBg () {
+    const urlImage = await getLinkToImage();
+    const img = new Image();
+    img.src = urlImage;
+    img.onload = () => {      
+        document.body.style.backgroundImage = `url('${urlImage}')`;
+    }; 
+}
+
+async function getLinkToImage() {
+    
+    let urlGet;
+    let urlImage;
+    if (!tag) tag = getTimeOfDay();
+
+    switch (conf) {
+        case 'unsplash': 
+            urlGet = `https://api.unsplash.com/photos/random?query=${tag}&client_id=${UNSPLASH_API_KEY}`;
+            const res = await fetch(urlGet);
+            const data = await res.json();
+            urlImage = data.urls.regular;
+            break;
+        case 'flickr': 
+            urlGet = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${FLICKR_API_KEY}&tags=${tag}&format=json&nojsoncallback=1`;
+            const res1 = await fetch(urlGet);
+            const data1 = await res1.json();
+            const randomImg = getRandomInt(data1.photos.photo.length);
+            urlImage=`https://farm${data1.photos.photo[randomImg].farm}.staticflickr.com/${data1.photos.photo[randomImg].server}/${data1.photos.photo[randomImg].id}_${data1.photos.photo[randomImg].secret}.jpg`
+            break;
+        default :
+            urlImage = `./images/${timeOfDay}/${randomImageNum.toString().padStart(2,'0')}.jpg`;
+    }
+    return urlImage;
+}
+
+
+const getTimeOfDay = () => {
+    const date = new Date();
+    const hours = date.getHours();
+    if (hours < 6) return 'night';
+    if (hours < 12) return 'morning';
+    if (hours < 18) return 'afternoon';
+    return 'evening';
+}
+
+setBg();
+
+const getSlideNext = () => {
+    if (conf==='local') {
+        randomImageNum++;
+        if (randomImageNum>20) randomImageNum=1;
+    }
+    setBg();
+}
+
+const getSlidePrev = () => {
+    if (conf==='local') {
+        randomImageNum--;
+        if (randomImageNum<1) randomImageNum=20;
+    }
+    setBg();
+}
+
+slideNext.addEventListener('click', getSlideNext);
+slidePrev.addEventListener('click', getSlidePrev);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (backgroundBlock);
+
+
+
+
+/***/ }),
+
+/***/ "./src/Greating/index.js":
+/*!*******************************!*\
+  !*** ./src/Greating/index.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ "./src/Greating/index.css");
+/* harmony import */ var _utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/htmlToElement */ "./utils/htmlToElement.js");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.html */ "./src/Greating/index.html");
+
+
+
+
+const greating = (0,_utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__["default"])(_index_html__WEBPACK_IMPORTED_MODULE_2__["default"]);
+
+
+const timeBlock = greating.querySelector('.time');
+const dateBlock = greating.querySelector('.date');
+const greetingBlock = greating.querySelector('.greeting');
+const nameBlock = greating.querySelector('.name');
+
+
+
+window.addEventListener('beforeunload', () => {
+    setLocalStorage();
+});
+
+window.addEventListener('load', () => {
+    getLocalStorage();
+});
+
+
+
+// ****************** Local Storage ********************
+
+const getLocalStorage = () => {
+    if(localStorage.getItem('name')) {
+        nameBlock.value = localStorage.getItem('name');
+    }
+}
+
+const setLocalStorage = () => {
+    localStorage.setItem('name', nameBlock.value);
+}
+
+
+const showTime = () => {
+    const date = new Date();
+    timeBlock.textContent = date.toLocaleTimeString();
+    showGreeting();
+    showDate();
+    setTimeout(showTime, 1000);
+}
+
+const upperCaseFirst = (str)=> {
+    if (!str) return str;
+    return str[0].toUpperCase() + str.slice(1);
+  }
+
+const showDate = () => {
+    const date = new Date();
+    const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Moscow'};
+    dateBlock.textContent = upperCaseFirst(date.toLocaleDateString('ru-RU', options));
+}
+
+const getTimeOfDay = () => {
+    const date = new Date();
+    const hours = date.getHours();
+    if (hours < 6) return 'night';
+    if (hours < 12) return 'morning';
+    if (hours < 18) return 'afternoon';
+    return 'evening';
+}
+
+const showGreeting = () => {
+    const greetingText = `Good ${getTimeOfDay()},`;
+    greetingBlock.textContent = greetingText;
+}
+
+showTime();
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (greating);
+
+/***/ }),
+
+/***/ "./src/Player/index.js":
+/*!*****************************!*\
+  !*** ./src/Player/index.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ "./src/Player/index.css");
+/* harmony import */ var _utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/htmlToElement */ "./utils/htmlToElement.js");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.html */ "./src/Player/index.html");
+/* harmony import */ var _playList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./playList */ "./src/Player/playList.js");
+
+
+
+
+
+const player = (0,_utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__["default"])(_index_html__WEBPACK_IMPORTED_MODULE_2__["default"]);
+
+
+const playButton = player.querySelector('.play');
+const playPrevButton = player.querySelector('.play-prev');
+const playNextButton = player.querySelector('.play-next');
+
+const playListBlock = player.querySelector('.play-list');
+
+const progressBarBlock = player.querySelector('.progress-bar');
+const progressFillBlock = player.querySelector('.progress-fill');
+
+const audio = new Audio();
+
+let isPlay = false;
+let numSong = 0;
+let currentTime = 0;
+let isRunUpdater = false;
+let volumeValue = 1;
+
+
+const progressBlock = player.querySelector('.progress-bar');
+
+const clickProgress = (event) => {
+  const percentage = (event.x - 20) / 320;
+  const newTime = convertSongDurationInSec(_playList__WEBPACK_IMPORTED_MODULE_3__["default"][numSong].duration) * percentage;
+  currentTime = newTime;
+  audio.currentTime = currentTime;
+  updateInfo();
+  playAudio();
+}
+progressBlock.addEventListener('click', clickProgress);
+
+
+const volumeIco = player.querySelector('.volume-ico');
+
+
+const toggleMute = () => {
+  volumeIco.classList.toggle('mute');
+  if (audio.muted) {
+    audio.muted=false;
+    showVolumeValue();
+  } else {
+    audio.muted = true;
+    volumeFill.style.width = `0px`;
+  }
+  
+}
+
+volumeIco.addEventListener('click', toggleMute)
+
+const volumeFill = player.querySelector('.volume-bar-fill');
+const volumeBar = player.querySelector('.volume-bar');
+
+const showVolumeValue = () => {
+  const fillWidth = Math.round(volumeValue* 70);
+  volumeFill.style.width = `${fillWidth}px`;
+}
+
+const setNewVolumeValue = (event) => {
+  
+  volumeValue = (event.x - 160) / 70;
+  audio.volume = volumeValue;
+  showVolumeValue();
+}
+
+volumeBar.addEventListener('click', setNewVolumeValue)
+
+const playAudio = () => {
+  if (isPlay) {
+    changeActiveItem();
+    if (!isRunUpdater) {
+      isRunUpdater=true;
+      startUpdaterInfo();
+    } 
+    audio.src = _playList__WEBPACK_IMPORTED_MODULE_3__["default"][numSong].src;
+    audio.currentTime = currentTime;
+    let playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.then(_ => {
+      })
+      .catch(error => {
+      });
+    }
+    //showProgress();
+  } else {
+    audio.pause();
+    currentTime = audio.currentTime;
+    
+  }
+  
+}
+
+const removePauseMini = () => {
+  const playBottons = player.querySelectorAll('.play-button');
+  playBottons.forEach (button => {
+      button.classList.remove('pause-mini');
+    })
+}
+
+const addPauseMini = () => {
+  const liItems = player.querySelectorAll('.play-item');
+  liItems.forEach (item => {
+    if (item.id === `song-${numSong}`) 
+    {
+      const button = item.querySelector('.play-button');
+      button.classList.add('pause-mini');
+    }
+  })
+}
+
+const clickBtnPlay = () => {
+  if (isPlay) {
+    playButton.classList.remove('pause');
+    removePauseMini();
+    isPlay = false;
+  } else {
+    showVolumeValue();
+    playButton.classList.add('pause');
+    isPlay = true;
+    
+    addPauseMini();
+  }
+  updateInfo();
+  playAudio();
+}
+
+const parseNumSongInId = (strId) => {
+  return parseInt(strId.slice(5));
+}
+
+const clickPlaySong = (event) => {
+  if (event.target.classList.contains('play-button')) {
+    const id = parseNumSongInId(event.target.parentElement.id);
+    if (!isPlay) {
+      if (id != numSong)  {
+        numSong = id;
+        currentTime = 0;
+        audio.currentTime=currentTime;
+      }
+      clickBtnPlay();
+    } else {
+      if (numSong === id) {
+        clickBtnPlay();
+      } else {
+        removePauseMini();
+        numSong = id;
+        currentTime = 0;
+        audio.currentTime=currentTime;
+        addPauseMini();
+        playAudio();
+      }
+    }
+  }
+}
+
+playListBlock.addEventListener('click', clickPlaySong)
+
+const clickBtnNextSong = () => {
+  clearActiveSongStile();
+  removePauseMini();
+
+  numSong++;
+  if (numSong >= _playList__WEBPACK_IMPORTED_MODULE_3__["default"].length) numSong = 0;
+
+  isPlay = true;
+  currentTime = 0;
+  audio.currentTime=currentTime;
+  playButton.classList.add('pause');
+  addPauseMini();
+  addActiveSongStyle();
+  
+  playAudio();
+}
+
+const convertSecondsInMinStr = (sec) => { 
+  const min = Math.floor(sec/60).toString();
+  return `${min.padStart(2,'0')}:${Math.floor(sec % 60).toString().padStart(2,'0')}`;
+}
+
+const updateInfo = () =>
+{
+  const currTime = audio.currentTime;
+  const durationInfo = player.querySelector('.duration');
+  durationInfo.innerText = `${convertSecondsInMinStr(currTime)}/${_playList__WEBPACK_IMPORTED_MODULE_3__["default"][numSong].duration}`;
+  showProgress();
+
+}
+
+const startUpdaterInfo = () => {
+  updateInfo();
+  setTimeout(startUpdaterInfo, 1000);
+}
+
+
+
+const clickBtnPrevSong = () => {
+  clearActiveSongStile();
+  removePauseMini();
+
+  numSong--;
+  if (numSong < 0) numSong = _playList__WEBPACK_IMPORTED_MODULE_3__["default"].length - 1;
+
+  isPlay = true;
+  currentTime = 0;
+  audio.currentTime = currentTime;
+
+  playButton.classList.add('pause');
+  addPauseMini();
+  addActiveSongStyle();
+  playAudio();
+}
+
+playNextButton.addEventListener('click', clickBtnNextSong);
+playPrevButton.addEventListener('click', clickBtnPrevSong);
+
+playButton.addEventListener('click', clickBtnPlay);
+
+const createShortSongTitle= (title, maxLength) => {
+  if (title.length < maxLength) {
+    return title;
+  } else {
+    return `${title.slice(0, maxLength - 3)}...`;
+  }
+}
+
+
+const clearActiveSongStile = () => {
+  const liItems = player.querySelectorAll('.play-item');
+  liItems.forEach (item => {
+    if (item.classList.contains('item-active')) {
+      item.classList.remove('item-active');
+
+    }
+  })
+}
+
+const addActiveSongStyle = () => {
+  const liItems = player.querySelectorAll('.play-item');
+  liItems.forEach (item => {
+    if (item.id === `song-${numSong}`) 
+    {
+      item.classList.add('item-active');
+    }
+  })
+  updateInfo();
+  const songTitle = player.querySelector('.song-title');
+  songTitle.innerHTML = `${numSong+1}. ${createShortSongTitle(_playList__WEBPACK_IMPORTED_MODULE_3__["default"][numSong].title, 23)}`;
+}
+
+
+
+
+const changeActiveItem =() => {
+  clearActiveSongStile();
+  addActiveSongStyle();
+}
+
+
+
+
+
+
+
+audio.addEventListener('ended', (event) => {
+  clickBtnNextSong();
+});
+
+const convertSongDurationInSec = (duration) => {
+  return parseInt(duration.slice(0,2))*60+parseInt(duration.slice(3));
+}
+
+const showProgress = () => {
+  //if (!isPlay) return;
+  const maxWidth = progressBarBlock.clientWidth;
+  const songDurationInSec = convertSongDurationInSec(_playList__WEBPACK_IMPORTED_MODULE_3__["default"][numSong].duration);
+  let fillWidth = Math.round(audio.currentTime / songDurationInSec * maxWidth);
+  if (fillWidth > maxWidth) fillWidth = maxWidth;
+  progressFillBlock.style.width = `${fillWidth}px`;
+  //setTimeout(showProgress, 1000);
+}
+
+
+const loadPlayList = () => {
+  _playList__WEBPACK_IMPORTED_MODULE_3__["default"].forEach((song , i) => {
+    const li = document.createElement('li');
+    const divPlay = document.createElement('div');
+    const divTitle = document.createElement('div');
+    const divDuration = document.createElement('div');
+    divPlay.className = 'play-button';
+    li.append(divPlay);
+    divTitle.innerHTML = createShortSongTitle(song.title, 33);
+    divTitle.className = 'play-title';
+    li.append(divTitle);
+    divDuration.className = 'playlist-duration';
+    divDuration.innerText = song.duration;
+    li.append(divDuration);
+    li.className = 'play-item';
+    li.id = `song-${i}`;
+    playListBlock.append(li);
+  })
+}
+
+loadPlayList();
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (player);
+
+/***/ }),
+
+/***/ "./src/Player/playList.js":
+/*!********************************!*\
+  !*** ./src/Player/playList.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const playList = [
+    {      
+      title: 'Long name - Aqua Caelestis Aqua Caelestis Aqua Caelestis Aqua Caelestis Aqua Caelestis ',
+      src: './sounds/Aqua Caelestis.mp3',
+      duration: '00:39'
+    },  
+    {      
+      title: 'River Flows In You',
+      src: './sounds/River Flows In You.mp3',
+      duration: '01:37'
+    },
+    {      
+      title: 'Ennio Morricone',
+      src: './sounds/Ennio Morricone.mp3',
+      duration: '01:37'
+    }, 
+    {      
+      title: 'Summer Wind',
+      src: './sounds/Summer Wind.mp3',
+      duration: '01:50'
+    }, 
+  ]
+  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (playList);
+
+/***/ }),
+
+/***/ "./src/Quotes/index.js":
+/*!*****************************!*\
+  !*** ./src/Quotes/index.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ "./src/Quotes/index.css");
+/* harmony import */ var _utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/htmlToElement */ "./utils/htmlToElement.js");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.html */ "./src/Quotes/index.html");
+
+
+
+
+
+
+const quotes = (0,_utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__["default"])(_index_html__WEBPACK_IMPORTED_MODULE_2__["default"]);
+
+
+const quoteBlock = quotes.querySelector('.quote');
+const autorBlock = quotes.querySelector('.author');
+const changeQuoteBlock = quotes.querySelector('.change-quote');
+
+
+
+
+let numQuote = 0;
+
+const getRandomInt = (max) => {
+    return Math.floor(Math.random() * max);
+}
+
+const getNewNumQuote = (max) => {
+    if (max === 1) return 0;
+    let newNumQuote = getRandomInt(max);
+    while (newNumQuote === numQuote) {
+        newNumQuote = getRandomInt(max);
+    }
+   return newNumQuote;
+}
+
+async function getQuotes() {  
+    
+    const quotes = './json/quotes.json';
+    const res = await fetch(quotes);
+    const data = await res.json(); 
+    numQuote = getNewNumQuote(data.length);
+    quoteBlock.textContent = data[numQuote].text;
+    autorBlock.textContent = data[numQuote].author;
+}
+
+getQuotes();
+
+changeQuoteBlock.addEventListener('click', getQuotes);
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (quotes);
+
+/***/ }),
+
+/***/ "./src/Weather/index.js":
+/*!******************************!*\
+  !*** ./src/Weather/index.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _owfont_regular_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./owfont-regular.css */ "./src/Weather/owfont-regular.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Weather/index.css");
+/* harmony import */ var _utils_htmlToElement__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/htmlToElement */ "./utils/htmlToElement.js");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.html */ "./src/Weather/index.html");
+
+
+
+
+
+const weather = (0,_utils_htmlToElement__WEBPACK_IMPORTED_MODULE_2__["default"])(_index_html__WEBPACK_IMPORTED_MODULE_3__["default"]);
+
+const WEATHER_API_KEY = '7084f9129f59e9d3a287c7606d73e5ba';
+
+const weatherIconBlock = weather.querySelector('.weather-icon');
+const temperatureBlock = weather.querySelector('.temperature');
+const windBlock = weather.querySelector('.wind');
+const humidityBlock = weather.querySelector('.humidity');
+const weatherDescriptionBlock = weather.querySelector('.weather-description');
+const cityBlock = weather.querySelector('.city');
+
+const weatherErrorBlock = weather.querySelector('.weather-error');
+
+const upperCaseFirst = (str)=> {
+    if (!str) return str;
+    return str[0].toUpperCase() + str.slice(1);
+}
+
+const convertInStrTemperature = (temperature) => {
+    temperature = Math.round(temperature);
+    let strTemperature = temperature.toString();
+    if (temperature > 0) strTemperature = '+' + strTemperature;
+    return strTemperature;
+}
+
+const convertDegreeToDirection = (degree) => {
+    if (degree < 22.5) return 'C';
+    if (degree < 67.5) return 'C-В';
+    if (degree < 112.5) return 'В';
+    if (degree < 157.5) return 'Ю-В';
+    if (degree < 202.5) return 'Ю';
+    if (degree < 247.5) return 'Ю-З';
+    if (degree < 292.5) return 'З';
+    return 'C';
+}
+
+async function getWeather() {  
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityBlock.value}&lang=ru&appid=${WEATHER_API_KEY}&units=metric`;
+    weatherIconBlock.className = 'weather-icon owf';
+    weatherErrorBlock.textContent = '';
+    try {
+        const res = await fetch(url);
+        const data = await res.json(); 
+        weatherIconBlock.classList.add(`owf-${data.weather[0].id}`);
+        temperatureBlock.textContent = `${convertInStrTemperature(data.main.temp)}°C`;
+        weatherDescriptionBlock.textContent = upperCaseFirst(data.weather[0].description);
+        humidityBlock.textContent = `Влажность: ${data.main.humidity}%`;
+        windBlock.textContent = `Ветер ${convertDegreeToDirection(data.wind.deg)}, ${Math.round(data.wind.speed)} м/с`;
+        
+    }
+    catch (err) {
+        temperatureBlock.textContent = '';
+        weatherDescriptionBlock.textContent = '';
+        humidityBlock.textContent = '';
+        windBlock.textContent = '';
+        weatherErrorBlock.textContent = 'Введите корректный город!';
+    }
+}
+
+getWeather(); 
+cityBlock.addEventListener('change', getWeather);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (weather);
+
+/***/ }),
+
+/***/ "./utils/htmlToElement.js":
+/*!********************************!*\
+  !*** ./utils/htmlToElement.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(htmlString) {
+    const template = document.createElement('template');
+    template.innerHTML = htmlString;
+    return template.content.firstChild;
+}
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Greating__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Greating */ "./src/Greating/index.js");
+/* harmony import */ var _Background__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Background */ "./src/Background/index.js");
+/* harmony import */ var _Player__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Player */ "./src/Player/index.js");
+/* harmony import */ var _Weather__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Weather */ "./src/Weather/index.js");
+/* harmony import */ var _Quotes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Quotes */ "./src/Quotes/index.js");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../css/style.css */ "./css/style.css");
+
+
+
+
+
+
+
+
+const headerBlock = document.querySelector('.header');
+const mainBlock = document.querySelector('.main');
+const footerBlock = document.querySelector('.footer');
+
+headerBlock.append(_Player__WEBPACK_IMPORTED_MODULE_2__["default"]);
+headerBlock.append(_Weather__WEBPACK_IMPORTED_MODULE_3__["default"]);
+
+mainBlock.append(_Background__WEBPACK_IMPORTED_MODULE_1__["default"]);
+mainBlock.append(_Greating__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+footerBlock.append(_Quotes__WEBPACK_IMPORTED_MODULE_4__["default"]);
+
+
+
+
+
+
+
+
+
+
+/*
+const timeBlock = document.querySelector('.time');
+const dateBlock = document.querySelector('.date');
+const greetingBlock = document.querySelector('.greeting');
+const nameBlock = document.querySelector('.name');
+const slideNext = document.querySelector('.slide-next');
+const slidePrev = document.querySelector('.slide-prev');
+const bodyBlock = document.body;
+
+
+const weatherIconBlock = document.querySelector('.weather-icon');
+const temperatureBlock = document.querySelector('.temperature');
+const weatherDescriptionBlock = document.querySelector('.weather-description');
+const cityBlock = document.querySelector('.city');
+
+const quoteBlock = document.querySelector('.quote');
+const autorBlock = document.querySelector('.author');
+const changeQuoteBlock = document.querySelector('.change-quote');
+
+
+
+const UNSPLASH_API_KEY = 'yw2PXnVSDFGPpRVYC-NpSCm-ggZXLbGimG_gLiCmzak';
+
+
+
+/*
+// ****************** Load and Unload Doc ********************
+
+window.addEventListener('beforeunload', () => {
+    setLocalStorage();
+});
+
+window.addEventListener('load', () => {
+    getLocalStorage();
+});
+
+
+
+
+// ****************** Local Storage ********************
+
+const getLocalStorage = () => {
+    if(localStorage.getItem('name')) {
+        nameBlock.value = localStorage.getItem('name');
+    }
+}
+
+const setLocalStorage = () => {
+    localStorage.setItem('name', nameBlock.value);
+}
+
+// ****************** Staff ********************
+
+const getRandomInt = (max) => {
+    return Math.floor(Math.random() * max);
+}
+
+
+
+// ****************** Name Imput Block ********************
+
+const showTime = () => {
+    const date = new Date();
+    timeBlock.textContent = date.toLocaleTimeString();
+    showGreeting();
+    showDate();
+    setTimeout(showTime, 1000);
+}
+
+const upperCaseFirst = (str)=> {
+    if (!str) return str;
+    return str[0].toUpperCase() + str.slice(1);
+  }
+
+const showDate = () => {
+    const date = new Date();
+    const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Moscow'};
+    dateBlock.textContent = upperCaseFirst(date.toLocaleDateString('ru-RU', options));
+}
+
+const getTimeOfDay = () => {
+    const date = new Date();
+    const hours = date.getHours();
+    if (hours < 6) return 'night';
+    if (hours < 12) return 'morning';
+    if (hours < 18) return 'afternoon';
+    return 'evening';
+}
+
+const showGreeting = () => {
+    const greetingText = `Good ${getTimeOfDay()},`;
+    greetingBlock.textContent = greetingText;
+}
+
+showTime();
+
+
+// ****************** BG Image ********************
+
+async function setWebBg () {
+    const urlImage = await getLinkToImage();
+    const img = new Image();
+    img.src = urlImage;
+    img.onload = () => {      
+        bodyBlock.style.backgroundImage = `url('${urlImage}')`;
+    }; 
+}
+
+async function getLinkToImage() {
+    const timeOfDay = getTimeOfDay();
+    const url = `https://api.unsplash.com/photos/random?query=${timeOfDay}&client_id=${UNSPLASH_API_KEY}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    return data.urls.regular;
+}
+
+setWebBg();
+
+slideNext.addEventListener('click', setWebBg);
+slidePrev.addEventListener('click', setWebBg);
+
+// ****************** Weather ********************
+
+const convertInStrTemperature = (temperature) => {
+    temperature = Math.round(temperature);
+    let strTemperature = temperature.toString();
+    if (temperature>0) strTemperature = '+' + strTemperature;
+    return strTemperature;
+}
+
+async function getWeather() {  
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityBlock.value}&lang=ru&appid=${WEATHER_API_KEY}&units=metric`;
+    const res = await fetch(url);
+    const data = await res.json(); 
+    weatherIconBlock.className = 'weather-icon owf';
+    weatherIconBlock.classList.add(`owf-${data.weather[0].id}`);
+    temperatureBlock.textContent = `${convertInStrTemperature(data.main.temp)}°C`;
+    weatherDescriptionBlock.textContent = upperCaseFirst(data.weather[0].description);
+}
+
+getWeather(); 
+
+cityBlock.addEventListener('change', getWeather);
+
+// ****************** Quotes ********************
+
+let numQuote = 0;
+
+const getNewNumQuote = (max) => {
+    if (max === 1) return 0;
+    let newNumQuote = getRandomInt(max);
+    while (newNumQuote === numQuote) {
+        newNumQuote = getRandomInt(max);
+    }
+   return newNumQuote;
+}
+
+async function getQuotes() {  
+    const quotes = '../momentum/assets/quotes.json';
+    const res = await fetch(quotes);
+    const data = await res.json(); 
+    numQuote=getNewNumQuote(data.length);
+    quoteBlock.textContent = data[numQuote].text;
+    autorBlock.textContent = data[numQuote].author;
+}
+getQuotes();
+
+changeQuoteBlock.addEventListener('click', getQuotes);
+
+*/
+
+
+
+})();
+
+/******/ })()
+;
+//# sourceMappingURL=main.js.map
