@@ -9,15 +9,22 @@
       <div class="song-title"> </div>
       <div class="volume">
         <div class="volume-ico"></div>
-        <div class="volume-bar">
+        <!--<div class="volume-bar">
           <div class="volume-bar-fill"></div>
+        </div>-->
+        <div class="volume-slider">
+            <input type="range" class="volume-fader" min="0" max="1000" value="1000" step="1">
         </div>
       </div>
       <div class="duration">--:--/--:--</div> 
     </div>
   </div>
-  <div class="progress-bar">
+  <!--<div class="progress-bar">
     <div class="progress-fill"></div>
+  </div>-->
+
+  <div class="progress-slider">
+    <input type="range" class="progress-fader" min="0" max="1000" value="0" step="1">
   </div>
   <ul class="play-list"></ul>
 </div>

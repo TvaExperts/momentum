@@ -19,9 +19,9 @@ var code = "<div class=\"slider-icons\">\r\n    <button class=\"slide-prev slide
 
 /***/ }),
 
-/***/ "./src/Greating/index.html":
+/***/ "./src/Greeting/index.html":
 /*!*********************************!*\
-  !*** ./src/Greating/index.html ***!
+  !*** ./src/Greeting/index.html ***!
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -30,7 +30,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // Module
-var code = "<div class=\"greating__wrapper\">\r\n    <time class=\"time\"></time>\r\n    <date class=\"date\"></date>\r\n    <div class=\"greeting-container\">\r\n        <span class=\"greeting\"></span>\r\n        <input type=\"text\" class=\"name\" placeholder=\"Ваше имя...\"/>\r\n    </div>\r\n</div>";
+var code = "<div class=\"greeting__wrapper\">\r\n    <time class=\"time\"></time>\r\n    <date class=\"date\"></date>\r\n    <div class=\"greeting-container\">\r\n        <span class=\"greeting\"></span>\r\n        <input type=\"text\" class=\"name\" placeholder=\"Ваше имя...\"/>\r\n    </div>\r\n</div>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -47,7 +47,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // Module
-var code = "<div class=\"player\">\r\n  <div class=\"player-header\">\r\n    <div class=\"player-controls\">\r\n      <button class=\"play-prev player-icon\"></button>\r\n      <button class=\"play player-icon\"></button>\r\n      <button class=\"play-next player-icon\"></button>\r\n    </div>\r\n    <div class=\"info\">\r\n      <div class=\"song-title\"> </div>\r\n      <div class=\"volume\">\r\n        <div class=\"volume-ico\"></div>\r\n        <div class=\"volume-bar\">\r\n          <div class=\"volume-bar-fill\"></div>\r\n        </div>\r\n      </div>\r\n      <div class=\"duration\">--:--/--:--</div> \r\n    </div>\r\n  </div>\r\n  <div class=\"progress-bar\">\r\n    <div class=\"progress-fill\"></div>\r\n  </div>\r\n  <ul class=\"play-list\"></ul>\r\n</div>";
+var code = "<div class=\"player\">\r\n  <div class=\"player-header\">\r\n    <div class=\"player-controls\">\r\n      <button class=\"play-prev player-icon\"></button>\r\n      <button class=\"play player-icon\"></button>\r\n      <button class=\"play-next player-icon\"></button>\r\n    </div>\r\n    <div class=\"info\">\r\n      <div class=\"song-title\"> </div>\r\n      <div class=\"volume\">\r\n        <div class=\"volume-ico\"></div>\r\n        <!--<div class=\"volume-bar\">\r\n          <div class=\"volume-bar-fill\"></div>\r\n        </div>-->\r\n        <div class=\"volume-slider\">\r\n            <input type=\"range\" class=\"volume-fader\" min=\"0\" max=\"1000\" value=\"1000\" step=\"1\">\r\n        </div>\r\n      </div>\r\n      <div class=\"duration\">--:--/--:--</div> \r\n    </div>\r\n  </div>\r\n  <!--<div class=\"progress-bar\">\r\n    <div class=\"progress-fill\"></div>\r\n  </div>-->\r\n\r\n  <div class=\"progress-slider\">\r\n    <input type=\"range\" class=\"progress-fader\" min=\"0\" max=\"1000\" value=\"0\" step=\"1\">\r\n  </div>\r\n  <ul class=\"play-list\"></ul>\r\n</div>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -64,7 +64,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // Module
-var code = "<div class=\"quotes__wrraper \">\r\n    <button class=\"change-quote\"></button>\r\n    <div>\r\n      <div class=\"quote\"></div>\r\n      <div class=\"author\"></div>\r\n    </div>\r\n</div>";
+var code = "<div class=\"quotes__wrraper\">\r\n    <button class=\"change-quote\"></button>\r\n    <div>\r\n      <div class=\"quote\"></div>\r\n      <div class=\"author\"></div>\r\n    </div>\r\n</div>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -81,7 +81,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // Module
-var code = "<div class=\"settings-ico\">\r\n    <div class=\"settings\">\r\n        <ul class=\"setting-list\">\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-language\">Язык</span>\r\n                <select class=\"select settings-lang\">\r\n                    <option>РУ</option>\r\n                    <option>EN</option>\r\n                  </select>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-photo\">Фото</span>\r\n                <input type=\"text\" class=\"api-tag\" placeholder=\"Tags\" />\r\n                <select class=\"select settings-source\">\r\n                    <option>GitHub</option>\r\n                    <option>Unsplash</option>\r\n                    <option>Flickr</option>\r\n                </select>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-time\">Время</span>  \r\n                <label class=\"checkbox\"> \r\n                    <input type=\"checkbox\" class=\"checkbox-input cb-time\"/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-date\">Дата</span>\r\n                <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" class=\"checkbox-input cb-date\"/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-greating\">Приветствие</span>\r\n                <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" class=\"checkbox-input\" id=\"cb-greating\"/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-quote\">Цитата дня</span>\r\n                <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" class=\"checkbox-input cb-quote\" checked/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-weather\">Прогноз погоды</span>\r\n                <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" class=\"checkbox-input cb-weather\"/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-player\">Аудиоплеер</span>\r\n                <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" class=\"checkbox-input cb-player\"/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                \r\n            </li>\r\n        </ul>\r\n\r\n        \r\n    </div>\r\n\r\n</div>\r\n";
+var code = "<div class=\"settings-wrapper\">\r\n    <div class=\"settings-ico\"></div>\r\n    <div class=\"settings\">\r\n        <ul class=\"setting-list\">\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-language\">Язык</span>\r\n                <select class=\"select settings-lang\">\r\n                    <option>РУ</option>\r\n                    <option>EN</option>\r\n                    </select>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-photo\">Фото</span>\r\n                <input type=\"text\" class=\"api-tag\" placeholder=\"Tags\" />\r\n                <select class=\"select settings-source\">\r\n                    <option>GitHub</option>\r\n                    <option>Unsplash</option>\r\n                    <option>Flickr</option>\r\n                </select>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-time\">Время</span>  \r\n                <label class=\"checkbox\"> \r\n                    <input type=\"checkbox\" class=\"checkbox-input cb-time\"/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-date\">Дата</span>\r\n                <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" class=\"checkbox-input cb-date\"/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-greeting\">Приветствие</span>\r\n                <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" class=\"checkbox-input cb-greeting\"/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-quotes\">Цитата дня</span>\r\n                <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" class=\"checkbox-input cb-quotes\" checked/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-weather\">Прогноз погоды</span>\r\n                <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" class=\"checkbox-input cb-weather\"/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                <span class=\"settings-player\">Аудиоплеер</span>\r\n                <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" class=\"checkbox-input cb-player\"/>\r\n                    <div class=\"checkbox-wrapper\"></div>\r\n                </label>\r\n            </li>\r\n            <li class=\"settings-item\">\r\n                \r\n            </li>\r\n        </ul>\r\n    </div>\r\n\r\n\r\n</div>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -98,7 +98,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // Module
-var code = "<div class=\"weather\">\r\n    <input type=\"text\" class=\"city\" value=\"Минск\"/>\r\n    \r\n    <div class=\"weather-error\"></div>\r\n    <div class=\"description-container\">\r\n      <i class=\"weather-icon owf\"></i>\r\n      <span class=\"temperature\"></span>\r\n      <span class=\"weather-description\"></span>\r\n    </div>\r\n    <div class=\"wind\"></div>\r\n    <div class=\"humidity\"></div>\r\n  </div>";
+var code = "<div class=\"weather\">\r\n    <input type=\"text\" class=\"city\"/>\r\n    <div class=\"weather-error\"></div>\r\n    <div class=\"description-container\">\r\n      <i class=\"weather-icon owf\"></i>\r\n      <span class=\"temperature\"></span>\r\n      <span class=\"weather-description\"></span>\r\n    </div>\r\n    <div class=\"wind\"></div>\r\n    <div class=\"humidity\"></div>\r\n  </div>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -128,9 +128,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/Greating/index.css":
+/***/ "./src/Greeting/index.css":
 /*!********************************!*\
-  !*** ./src/Greating/index.css ***!
+  !*** ./src/Greeting/index.css ***!
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -247,10 +247,8 @@ async function getLinkToImage() {
     
     let urlGet;
     let urlImage;
-    let tag='';
     const timeOfDay = getTimeOfDay();
-    if (!localStorage.getItem('photo-tag')) tag = timeOfDay;
-
+    const tag = (localStorage.getItem('tag-photo')) || timeOfDay;
     switch (localStorage.getItem('photo-source')) {
         case 'unsplash': 
             urlGet = `https://api.unsplash.com/photos/random?query=${tag}&client_id=${UNSPLASH_API_KEY}`;
@@ -301,13 +299,15 @@ const getSlidePrev = () => {
 slideNext.addEventListener('click', getSlideNext);
 slidePrev.addEventListener('click', getSlidePrev);
 
+
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (backgroundBlock);
 
 /***/ }),
 
-/***/ "./src/Greating/index.js":
+/***/ "./src/Greeting/index.js":
 /*!*******************************!*\
-  !*** ./src/Greating/index.js ***!
+  !*** ./src/Greeting/index.js ***!
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -315,21 +315,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ "./src/Greating/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ "./src/Greeting/index.css");
 /* harmony import */ var _utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/htmlToElement */ "./utils/htmlToElement.js");
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.html */ "./src/Greating/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.html */ "./src/Greeting/index.html");
 /* harmony import */ var _lang__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../lang */ "./src/lang.js");
 
 
 
 
 
-const greating = (0,_utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__["default"])(_index_html__WEBPACK_IMPORTED_MODULE_2__["default"]);
+const greeting = (0,_utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__["default"])(_index_html__WEBPACK_IMPORTED_MODULE_2__["default"]);
 
-const timeBlock = greating.querySelector('.time');
-const dateBlock = greating.querySelector('.date');
-const greetingBlock = greating.querySelector('.greeting');
-const nameBlock = greating.querySelector('.name');
+const timeBlock = greeting.querySelector('.time');
+const dateBlock = greeting.querySelector('.date');
+const greetingBlock = greeting.querySelector('.greeting');
+const nameBlock = greeting.querySelector('.name');
 
 window.addEventListener('beforeunload', () => {
     setLocalStorage();
@@ -372,19 +372,35 @@ const showDate = () => {
 const getTimeOfDay = () => {
     const date = new Date();
     const hours = date.getHours();
-    if (hours < 6) return _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["great-night"][localStorage.getItem('language')];
-    if (hours < 12) return _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["great-morning"][localStorage.getItem('language')];
-    if (hours < 18) return _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["great-afternoon"][localStorage.getItem('language')];
-    return _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["great-evening"][localStorage.getItem('language')]; 
+    if (hours < 6) return _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["greet-night"][localStorage.getItem('language')];
+    if (hours < 12) return _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["greet-morning"][localStorage.getItem('language')];
+    if (hours < 18) return _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["greet-afternoon"][localStorage.getItem('language')];
+    return _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["greet-evening"][localStorage.getItem('language')]; 
 }
 
 const showGreeting = () => {
     greetingBlock.textContent = getTimeOfDay();
 }
 
-showTime();
+const loadTimeBlock = () => {
+    if (localStorage.getItem('date') === 'false') {
+        const date = greeting.querySelector('.date');
+        date.classList.add('hide');
+    }
+    if (localStorage.getItem('time') === 'false') {
+        const time = greeting.querySelector('.time');
+        time.classList.add('hide');
+    }
+    if (localStorage.getItem('greeting') === 'false') {
+        const greetingBlock = greeting.querySelector('.greeting-container');
+        greetingBlock.classList.add('hide');
+    }
+    showTime();
+}
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (greating);
+loadTimeBlock();
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (greeting);
 
 /***/ }),
 
@@ -409,15 +425,15 @@ __webpack_require__.r(__webpack_exports__);
 
 const player = (0,_utils_htmlToElement__WEBPACK_IMPORTED_MODULE_1__["default"])(_index_html__WEBPACK_IMPORTED_MODULE_2__["default"]);
 
-
 const playButton = player.querySelector('.play');
 const playPrevButton = player.querySelector('.play-prev');
 const playNextButton = player.querySelector('.play-next');
-
 const playListBlock = player.querySelector('.play-list');
-
-const progressBarBlock = player.querySelector('.progress-bar');
-const progressFillBlock = player.querySelector('.progress-fill');
+const volumeIco = player.querySelector('.volume-ico');
+const volSlider = player.querySelector('.volume-slider');
+const volFader = player.querySelector('.volume-fader');
+const progressSlider = player.querySelector('.progress-slider');
+const progressFader = player.querySelector('.progress-fader');
 
 const audio = new Audio();
 
@@ -425,55 +441,21 @@ let isPlay = false;
 let numSong = 0;
 let currentTime = 0;
 let isRunUpdater = false;
-let volumeValue = 1;
-
-
-const progressBlock = player.querySelector('.progress-bar');
-
-const clickProgress = (event) => {
-  const percentage = (event.x - 20) / 320;
-  const newTime = convertSongDurationInSec(_playList__WEBPACK_IMPORTED_MODULE_3__["default"][numSong].duration) * percentage;
-  currentTime = newTime;
-  audio.currentTime = currentTime;
-  updateInfo();
-  playAudio();
-}
-progressBlock.addEventListener('click', clickProgress);
-
-
-const volumeIco = player.querySelector('.volume-ico');
-
 
 const toggleMute = () => {
   volumeIco.classList.toggle('mute');
   if (audio.muted) {
-    audio.muted=false;
-    showVolumeValue();
+    audio.muted = false;
+    volFader.value = audio.volume * 1000;
+    volSlider.style.width = Math.round(audio.volume * 70).toString() + 'px';
   } else {
     audio.muted = true;
-    volumeFill.style.width = `0px`;
+    volFader.value = 0;
+    volSlider.style.width = `0px`;
   }
-  
 }
 
 volumeIco.addEventListener('click', toggleMute)
-
-const volumeFill = player.querySelector('.volume-bar-fill');
-const volumeBar = player.querySelector('.volume-bar');
-
-const showVolumeValue = () => {
-  const fillWidth = Math.round(volumeValue* 70);
-  volumeFill.style.width = `${fillWidth}px`;
-}
-
-const setNewVolumeValue = (event) => {
-  
-  volumeValue = (event.x - 160) / 70;
-  audio.volume = volumeValue;
-  showVolumeValue();
-}
-
-volumeBar.addEventListener('click', setNewVolumeValue)
 
 const playAudio = () => {
   if (isPlay) {
@@ -491,13 +473,11 @@ const playAudio = () => {
       .catch(error => {
       });
     }
-    //showProgress();
+    showProgress();
   } else {
     audio.pause();
     currentTime = audio.currentTime;
-    
   }
-  
 }
 
 const removePauseMini = () => {
@@ -524,10 +504,8 @@ const clickBtnPlay = () => {
     removePauseMini();
     isPlay = false;
   } else {
-    showVolumeValue();
     playButton.classList.add('pause');
     isPlay = true;
-    
     addPauseMini();
   }
   updateInfo();
@@ -568,17 +546,14 @@ playListBlock.addEventListener('click', clickPlaySong)
 const clickBtnNextSong = () => {
   clearActiveSongStile();
   removePauseMini();
-
   numSong++;
   if (numSong >= _playList__WEBPACK_IMPORTED_MODULE_3__["default"].length) numSong = 0;
-
   isPlay = true;
   currentTime = 0;
   audio.currentTime=currentTime;
   playButton.classList.add('pause');
   addPauseMini();
   addActiveSongStyle();
-  
   playAudio();
 }
 
@@ -593,7 +568,6 @@ const updateInfo = () =>
   const durationInfo = player.querySelector('.duration');
   durationInfo.innerText = `${convertSecondsInMinStr(currTime)}/${_playList__WEBPACK_IMPORTED_MODULE_3__["default"][numSong].duration}`;
   showProgress();
-
 }
 
 const startUpdaterInfo = () => {
@@ -601,19 +575,14 @@ const startUpdaterInfo = () => {
   setTimeout(startUpdaterInfo, 1000);
 }
 
-
-
 const clickBtnPrevSong = () => {
   clearActiveSongStile();
   removePauseMini();
-
   numSong--;
   if (numSong < 0) numSong = _playList__WEBPACK_IMPORTED_MODULE_3__["default"].length - 1;
-
   isPlay = true;
   currentTime = 0;
   audio.currentTime = currentTime;
-
   playButton.classList.add('pause');
   addPauseMini();
   addActiveSongStyle();
@@ -622,7 +591,6 @@ const clickBtnPrevSong = () => {
 
 playNextButton.addEventListener('click', clickBtnNextSong);
 playPrevButton.addEventListener('click', clickBtnPrevSong);
-
 playButton.addEventListener('click', clickBtnPlay);
 
 const createShortSongTitle= (title, maxLength) => {
@@ -633,13 +601,11 @@ const createShortSongTitle= (title, maxLength) => {
   }
 }
 
-
 const clearActiveSongStile = () => {
   const liItems = player.querySelectorAll('.play-item');
   liItems.forEach (item => {
     if (item.classList.contains('item-active')) {
       item.classList.remove('item-active');
-
     }
   })
 }
@@ -657,19 +623,10 @@ const addActiveSongStyle = () => {
   songTitle.innerHTML = `${numSong+1}. ${createShortSongTitle(_playList__WEBPACK_IMPORTED_MODULE_3__["default"][numSong].title, 23)}`;
 }
 
-
-
-
 const changeActiveItem =() => {
   clearActiveSongStile();
   addActiveSongStyle();
 }
-
-
-
-
-
-
 
 audio.addEventListener('ended', (event) => {
   clickBtnNextSong();
@@ -680,15 +637,10 @@ const convertSongDurationInSec = (duration) => {
 }
 
 const showProgress = () => {
-  //if (!isPlay) return;
-  const maxWidth = progressBarBlock.clientWidth;
   const songDurationInSec = convertSongDurationInSec(_playList__WEBPACK_IMPORTED_MODULE_3__["default"][numSong].duration);
-  let fillWidth = Math.round(audio.currentTime / songDurationInSec * maxWidth);
-  if (fillWidth > maxWidth) fillWidth = maxWidth;
-  progressFillBlock.style.width = `${fillWidth}px`;
-  //setTimeout(showProgress, 1000);
+  progressFader.value = Math.round(audio.currentTime / songDurationInSec * 1000)
+  progressSlider.style.width = Math.round(320 * progressFader.value / 1000).toString()+'px';
 }
-
 
 const loadPlayList = () => {
   _playList__WEBPACK_IMPORTED_MODULE_3__["default"].forEach((song , i) => {
@@ -710,7 +662,33 @@ const loadPlayList = () => {
   })
 }
 
-loadPlayList();
+const loadPlayer = () => { 
+  if (localStorage.getItem('player') === 'false') {
+    player.classList.add('hide');
+  }
+  loadPlayList();
+}
+
+const changeVolumeValue = () => {
+  audio.volume = volFader.value / 1000;
+  volSlider.style.width = Math.round(audio.volume * 70).toString() + 'px';
+}
+
+volFader.addEventListener('input', changeVolumeValue);
+
+const changeProgressValue = () => {
+  const percentage = progressFader.value / 1000;
+  progressSlider.style.width = Math.round(320 * percentage).toString()+'px';
+  const newTime = convertSongDurationInSec(_playList__WEBPACK_IMPORTED_MODULE_3__["default"][numSong].duration) * percentage;
+  currentTime = newTime;
+  audio.currentTime = currentTime;
+  updateInfo();
+  playAudio();
+}
+
+progressFader.addEventListener('input', changeProgressValue);
+
+loadPlayer();
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (player);
 
@@ -781,7 +759,7 @@ const changeQuoteBlock = quotes.querySelector('.change-quote');
 
 
 
-let numQuote = 0;
+let numQuote = parseInt(localStorage.getItem('numQuote')) || 0 ;
 
 const getRandomInt = (max) => {
     return Math.floor(Math.random() * max);
@@ -797,20 +775,26 @@ const getNewNumQuote = (max) => {
 }
 
 async function getQuotes() {  
-    
     const quotes = `./json/${localStorage.getItem('language')}-quotes.json`;
     const res = await fetch(quotes);
     const data = await res.json(); 
     numQuote = getNewNumQuote(data.length);
+    localStorage.setItem('numQuote', numQuote.toString());
     quoteBlock.textContent = data[numQuote].text;
     autorBlock.textContent = data[numQuote].author;
 }
 
-getQuotes();
+const loadQuotes = () => { 
+    if (localStorage.getItem('quotes') === 'false') {
+        quotes.classList.add('hide');
+    }
+    getQuotes();
+  }
+
 
 changeQuoteBlock.addEventListener('click', getQuotes);
 
-
+loadQuotes();
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (quotes);
@@ -850,24 +834,50 @@ window.addEventListener('load', () => {
 
 const selectLang = settings.querySelector('.settings-lang');
 const selectSourcePhoto = settings.querySelector('.settings-source');
-// ****************** Local Storage ********************
+
+const tagPhoto = settings.querySelector('.api-tag');
+
+const icoBlock = settings.querySelector('.settings-ico');
+const toggleIcoClick= ()=> {
+    settings.classList.toggle('show');
+}
+icoBlock.addEventListener('click', toggleIcoClick);
+
+const changeTagPhoto = () => {
+    localStorage.setItem('tag-photo', tagPhoto.value);
+}
+
+tagPhoto.addEventListener('change' , changeTagPhoto);
+
+
 
 const getLocalStorage = () => {
     if(!localStorage.getItem('language')) {
         localStorage.setItem('language', 'en');
     }
-    
-   if (localStorage.getItem('language')==='ru') {
-    selectLang.selectedIndex=0;
-   } else {
-    selectLang.selectedIndex=1;
-   }
+    if (localStorage.getItem('language') === 'ru') {
+        selectLang.selectedIndex = 0;
+    } else {
+        selectLang.selectedIndex = 1;
+    }
 
-        
+    if(localStorage.getItem('tag-photo')) {
+        tagPhoto.value = localStorage.getItem('tag-photo');
+    }
+
 
 
     if(!localStorage.getItem('photo-source')) {
         localStorage.setItem('photo-source', 'github');
+    }
+
+    switch (localStorage.getItem('photo-source')) {
+        case 'github': selectSourcePhoto.selectedIndex = 0;
+            break;
+        case 'unsplash': selectSourcePhoto.selectedIndex = 1;
+            break;
+        case 'flickr': selectSourcePhoto.selectedIndex = 2;
+            break;
     }
 
     if(!localStorage.getItem('time')) {
@@ -876,8 +886,8 @@ const getLocalStorage = () => {
     if(!localStorage.getItem('date')) {
         localStorage.setItem('date', 'true');
     }
-    if(!localStorage.getItem('greating')) {
-        localStorage.setItem('greating', 'true');
+    if(!localStorage.getItem('greeting')) {
+        localStorage.setItem('greeting', 'true');
     }
     if(!localStorage.getItem('quotes')) {
         localStorage.setItem('quotes', 'true');
@@ -885,8 +895,8 @@ const getLocalStorage = () => {
     if(!localStorage.getItem('weather')) {
         localStorage.setItem('weather', 'true');
     }
-    if(!localStorage.getItem('audioplayer')) {
-        localStorage.setItem('audioplayer', 'true');
+    if(!localStorage.getItem('player')) {
+        localStorage.setItem('player', 'true');
     }
 }
 
@@ -909,7 +919,6 @@ const changeLanguage = () => {
 selectLang.addEventListener('change', changeLanguage)
 
 const changeSourcePhoto = () => {
-
     switch (selectSourcePhoto.selectedIndex) {
         case 0: localStorage.setItem('photo-source', 'github');
                 break;
@@ -918,7 +927,6 @@ const changeSourcePhoto = () => {
         case 2: localStorage.setItem('photo-source', 'flickr');
                 break;
     }
-    console.log(localStorage.getItem('photo-source'));
 }
 
 selectSourcePhoto.addEventListener('change', changeSourcePhoto)
@@ -929,10 +937,10 @@ const loadSettings = () => {
     timeBlock.innerText = _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["settings-time"][localStorage.getItem('language')];
     const dateBlock = settings.querySelector('.settings-date');
     dateBlock.innerText = _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["settings-date"][localStorage.getItem('language')];
-    const greatingBlock = settings.querySelector('.settings-greating');
-    greatingBlock.innerText = _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["settings-greating"][localStorage.getItem('language')];
-    const quoteBlock = settings.querySelector('.settings-quote');
-    quoteBlock.innerText = _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["settings-quote"][localStorage.getItem('language')];
+    const greetingBlock = settings.querySelector('.settings-greeting');
+    greetingBlock.innerText = _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["settings-greeting"][localStorage.getItem('language')];
+    const quoteBlock = settings.querySelector('.settings-quotes');
+    quoteBlock.innerText = _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["settings-quotes"][localStorage.getItem('language')];
     const weatherBlock = settings.querySelector('.settings-weather');
     weatherBlock.innerText = _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["settings-weather"][localStorage.getItem('language')];
     const playerBlock = settings.querySelector('.settings-player');
@@ -942,10 +950,62 @@ const loadSettings = () => {
     const photoBlock = settings.querySelector('.settings-photo');
     photoBlock.innerText = _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["settings-photo"][localStorage.getItem('language')];
 
-    
-    //if (localStorage.getItem('greating') === 'true') photoCheckbox.checked = true;
-    
+    const cbTime = settings.querySelector('.cb-time');
+    cbTime.checked = (localStorage.getItem('time') === 'true');
+    cbTime.addEventListener('change' , changeTime)
+    const cbDate = settings.querySelector('.cb-date');
+    cbDate.checked = (localStorage.getItem('date') === 'true');
+    cbDate.addEventListener('change' , changeDate)
+    const cbGreeting = settings.querySelector('.cb-greeting');
+    cbGreeting.checked = (localStorage.getItem('greeting') === 'true');
+    cbGreeting.addEventListener('change' , changeGreeting)
+    const cbQuotes = settings.querySelector('.cb-quotes');
+    cbQuotes.checked = (localStorage.getItem('quotes') === 'true');
+    cbQuotes.addEventListener('change' , changeQuotes)
+    const cbWeather = settings.querySelector('.cb-weather');
+    cbWeather.checked = (localStorage.getItem('weather') === 'true');
+    cbWeather.addEventListener('change' , changeWeather)
+    const cbPlayer= settings.querySelector('.cb-player');
+    cbPlayer.checked = (localStorage.getItem('player') === 'true');
+    cbPlayer.addEventListener('change' , changePlayer)
 
+}
+
+const changeTime = () => {
+    const time = document.querySelector('.time');
+    localStorage.setItem('time', time.classList.contains('hide').toString());
+    time.classList.toggle('hide');
+}
+
+
+const changeDate = () => {
+    const date = document.querySelector('.date');
+    localStorage.setItem('date', date.classList.contains('hide').toString());
+    date.classList.toggle('hide');
+}
+
+const changeGreeting = () => {
+    const greeting = document.querySelector('.greeting-container');
+    localStorage.setItem('greeting', greeting.classList.contains('hide').toString());
+    greeting.classList.toggle('hide');
+}
+
+const changeQuotes = () => {
+    const quotes = document.querySelector('.quotes__wrraper');
+    localStorage.setItem('quotes', quotes.classList.contains('hide').toString());
+    quotes.classList.toggle('hide');
+}
+
+const changeWeather = () => {
+    const weather = document.querySelector('.weather');
+    localStorage.setItem('weather', weather.classList.contains('hide').toString());
+    weather.classList.toggle('hide');
+}
+
+const changePlayer = () => {
+    const player = document.querySelector('.player');
+    localStorage.setItem('player', player.classList.contains('hide').toString());
+    player.classList.toggle('hide');
 }
 
 loadSettings();
@@ -1012,8 +1072,22 @@ const convertDegreeToDirection = (degree) => {
     return _lang__WEBPACK_IMPORTED_MODULE_4__["default"].n[localStorage.getItem('language')];
 }
 
-async function getWeather() { 
+const loadWeatherBlock = () => {
 
+    if (localStorage.getItem('weather') === 'false') {
+        weather.classList.add('hide');
+    }
+
+    if (!localStorage.getItem('city')) {
+        localStorage.setItem('city', 'Минск');
+    }
+    cityBlock.value = localStorage.getItem('city');
+    getWeather();
+}
+
+async function getWeather() { 
+    
+    
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityBlock.value}&lang=${localStorage.getItem('language')}&appid=${WEATHER_API_KEY}&units=metric`;
     weatherIconBlock.className = 'weather-icon owf';
     weatherErrorBlock.textContent = '';
@@ -1025,7 +1099,7 @@ async function getWeather() {
         weatherDescriptionBlock.textContent = upperCaseFirst(data.weather[0].description);
         humidityBlock.textContent = `${_lang__WEBPACK_IMPORTED_MODULE_4__["default"].humidity[localStorage.getItem('language')]}: ${data.main.humidity}%`;
         windBlock.textContent = `${_lang__WEBPACK_IMPORTED_MODULE_4__["default"].wind[localStorage.getItem('language')]} ${convertDegreeToDirection(data.wind.deg)}, ${Math.round(data.wind.speed)} ${_lang__WEBPACK_IMPORTED_MODULE_4__["default"].speed[localStorage.getItem('language')]}`;
-        
+        localStorage.setItem('city', cityBlock.value);
     }
     catch (err) {
         temperatureBlock.textContent = '';
@@ -1035,8 +1109,9 @@ async function getWeather() {
         weatherErrorBlock.textContent = _lang__WEBPACK_IMPORTED_MODULE_4__["default"].error[localStorage.getItem('language')];
     }
 }
+loadWeatherBlock();
 
-getWeather(); 
+
 cityBlock.addEventListener('change', getWeather);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (weather);
@@ -1054,19 +1129,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 const langArr = {
-    'great-night' : {
-        'ru' : 'Доброй ночи,',
+    'greet-night' : {
+        'ru' : 'Спокойной ночи,',
         'en' : 'Good night,'
     },
-    'great-morning' : {
+    'greet-morning' : {
         'ru' : 'Доброе утро,',
         'en' : 'Good morning,'
     },
-    'great-afternoon' : {
+    'greet-afternoon' : {
         'ru' : 'Добрый день,',
         'en' : 'Good afternoon,'
     },
-    'great-evening' : {
+    'greet-evening' : {
         'ru' : 'Доброго вечера,',
         'en' : 'Good evening,'
     },
@@ -1088,11 +1163,11 @@ const langArr = {
         'ru' : 'Дата',
         'en' : 'Date'
     },
-    'settings-greating' : {
+    'settings-greeting' : {
         'ru' : 'Приветствие',
-        'en' : 'Greatings'
+        'en' : 'Greetings'
     },
-    'settings-quote' : {
+    'settings-quotes' : {
         'ru' : 'Цитаты',
         'en' : 'Quotes'
     },
@@ -1158,8 +1233,10 @@ const langArr = {
         'en' : 'Enter the correct city!'
     },
 
-
-
+    'city-def' : {
+        'ru' : 'Минск',
+        'en' : 'Minsk'
+    },
 
 
 }
@@ -1249,7 +1326,7 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Greating__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Greating */ "./src/Greating/index.js");
+/* harmony import */ var _Greeting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Greeting */ "./src/Greeting/index.js");
 /* harmony import */ var _Background__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Background */ "./src/Background/index.js");
 /* harmony import */ var _Player__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Player */ "./src/Player/index.js");
 /* harmony import */ var _Weather__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Weather */ "./src/Weather/index.js");
@@ -1265,202 +1342,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
 const headerBlock = document.querySelector('.header');
 const mainBlock = document.querySelector('.main');
 const footerBlock = document.querySelector('.footer');
 
-footerBlock.prepend(_Quotes__WEBPACK_IMPORTED_MODULE_4__["default"]);
-footerBlock.prepend(_Settings__WEBPACK_IMPORTED_MODULE_5__["default"]);
+
 
 headerBlock.append(_Player__WEBPACK_IMPORTED_MODULE_2__["default"]);
 headerBlock.append(_Weather__WEBPACK_IMPORTED_MODULE_3__["default"]);
 
 mainBlock.append(_Background__WEBPACK_IMPORTED_MODULE_1__["default"]);
-mainBlock.append(_Greating__WEBPACK_IMPORTED_MODULE_0__["default"]);
+mainBlock.append(_Greeting__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-const timeBlock = document.querySelector('.time');
-const dateBlock = document.querySelector('.date');
-const greetingBlock = document.querySelector('.greeting');
-const nameBlock = document.querySelector('.name');
-const slideNext = document.querySelector('.slide-next');
-const slidePrev = document.querySelector('.slide-prev');
-const bodyBlock = document.body;
-
-
-const weatherIconBlock = document.querySelector('.weather-icon');
-const temperatureBlock = document.querySelector('.temperature');
-const weatherDescriptionBlock = document.querySelector('.weather-description');
-const cityBlock = document.querySelector('.city');
-
-const quoteBlock = document.querySelector('.quote');
-const autorBlock = document.querySelector('.author');
-const changeQuoteBlock = document.querySelector('.change-quote');
-
-
-
-const UNSPLASH_API_KEY = 'yw2PXnVSDFGPpRVYC-NpSCm-ggZXLbGimG_gLiCmzak';
-
-
-
-/*
-// ****************** Load and Unload Doc ********************
-
-window.addEventListener('beforeunload', () => {
-    setLocalStorage();
-});
-
-window.addEventListener('load', () => {
-    getLocalStorage();
-});
-
-
-
-
-// ****************** Local Storage ********************
-
-const getLocalStorage = () => {
-    if(localStorage.getItem('name')) {
-        nameBlock.value = localStorage.getItem('name');
-    }
-}
-
-const setLocalStorage = () => {
-    localStorage.setItem('name', nameBlock.value);
-}
-
-// ****************** Staff ********************
-
-const getRandomInt = (max) => {
-    return Math.floor(Math.random() * max);
-}
-
-
-
-// ****************** Name Imput Block ********************
-
-const showTime = () => {
-    const date = new Date();
-    timeBlock.textContent = date.toLocaleTimeString();
-    showGreeting();
-    showDate();
-    setTimeout(showTime, 1000);
-}
-
-const upperCaseFirst = (str)=> {
-    if (!str) return str;
-    return str[0].toUpperCase() + str.slice(1);
-  }
-
-const showDate = () => {
-    const date = new Date();
-    const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Moscow'};
-    dateBlock.textContent = upperCaseFirst(date.toLocaleDateString('ru-RU', options));
-}
-
-const getTimeOfDay = () => {
-    const date = new Date();
-    const hours = date.getHours();
-    if (hours < 6) return 'night';
-    if (hours < 12) return 'morning';
-    if (hours < 18) return 'afternoon';
-    return 'evening';
-}
-
-const showGreeting = () => {
-    const greetingText = `Good ${getTimeOfDay()},`;
-    greetingBlock.textContent = greetingText;
-}
-
-showTime();
-
-
-// ****************** BG Image ********************
-
-async function setWebBg () {
-    const urlImage = await getLinkToImage();
-    const img = new Image();
-    img.src = urlImage;
-    img.onload = () => {      
-        bodyBlock.style.backgroundImage = `url('${urlImage}')`;
-    }; 
-}
-
-async function getLinkToImage() {
-    const timeOfDay = getTimeOfDay();
-    const url = `https://api.unsplash.com/photos/random?query=${timeOfDay}&client_id=${UNSPLASH_API_KEY}`;
-    const res = await fetch(url);
-    const data = await res.json();
-    return data.urls.regular;
-}
-
-setWebBg();
-
-slideNext.addEventListener('click', setWebBg);
-slidePrev.addEventListener('click', setWebBg);
-
-// ****************** Weather ********************
-
-const convertInStrTemperature = (temperature) => {
-    temperature = Math.round(temperature);
-    let strTemperature = temperature.toString();
-    if (temperature>0) strTemperature = '+' + strTemperature;
-    return strTemperature;
-}
-
-async function getWeather() {  
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityBlock.value}&lang=ru&appid=${WEATHER_API_KEY}&units=metric`;
-    const res = await fetch(url);
-    const data = await res.json(); 
-    weatherIconBlock.className = 'weather-icon owf';
-    weatherIconBlock.classList.add(`owf-${data.weather[0].id}`);
-    temperatureBlock.textContent = `${convertInStrTemperature(data.main.temp)}°C`;
-    weatherDescriptionBlock.textContent = upperCaseFirst(data.weather[0].description);
-}
-
-getWeather(); 
-
-cityBlock.addEventListener('change', getWeather);
-
-// ****************** Quotes ********************
-
-let numQuote = 0;
-
-const getNewNumQuote = (max) => {
-    if (max === 1) return 0;
-    let newNumQuote = getRandomInt(max);
-    while (newNumQuote === numQuote) {
-        newNumQuote = getRandomInt(max);
-    }
-   return newNumQuote;
-}
-
-async function getQuotes() {  
-    const quotes = '../momentum/assets/quotes.json';
-    const res = await fetch(quotes);
-    const data = await res.json(); 
-    numQuote=getNewNumQuote(data.length);
-    quoteBlock.textContent = data[numQuote].text;
-    autorBlock.textContent = data[numQuote].author;
-}
-getQuotes();
-
-changeQuoteBlock.addEventListener('click', getQuotes);
-
-*/
-
+footerBlock.prepend(_Quotes__WEBPACK_IMPORTED_MODULE_4__["default"]);
+footerBlock.prepend(_Settings__WEBPACK_IMPORTED_MODULE_5__["default"]);
 
 
 })();

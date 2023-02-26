@@ -14,7 +14,7 @@ const changeQuoteBlock = quotes.querySelector('.change-quote');
 
 
 
-let numQuote = 0;
+let numQuote = parseInt(localStorage.getItem('numQuote')) || 0 ;
 
 const getRandomInt = (max) => {
     return Math.floor(Math.random() * max);
@@ -30,20 +30,26 @@ const getNewNumQuote = (max) => {
 }
 
 async function getQuotes() {  
-    
     const quotes = `./json/${localStorage.getItem('language')}-quotes.json`;
     const res = await fetch(quotes);
     const data = await res.json(); 
     numQuote = getNewNumQuote(data.length);
+    localStorage.setItem('numQuote', numQuote.toString());
     quoteBlock.textContent = data[numQuote].text;
     autorBlock.textContent = data[numQuote].author;
 }
 
-getQuotes();
+const loadQuotes = () => { 
+    if (localStorage.getItem('quotes') === 'false') {
+        quotes.classList.add('hide');
+    }
+    getQuotes();
+  }
+
 
 changeQuoteBlock.addEventListener('click', getQuotes);
 
-
+loadQuotes();
 
 
 export default quotes;

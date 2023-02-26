@@ -32,10 +32,8 @@ async function getLinkToImage() {
     
     let urlGet;
     let urlImage;
-    let tag='';
     const timeOfDay = getTimeOfDay();
-    if (!localStorage.getItem('photo-tag')) tag = timeOfDay;
-
+    const tag = (localStorage.getItem('tag-photo')) || timeOfDay;
     switch (localStorage.getItem('photo-source')) {
         case 'unsplash': 
             urlGet = `https://api.unsplash.com/photos/random?query=${tag}&client_id=${UNSPLASH_API_KEY}`;
@@ -85,5 +83,7 @@ const getSlidePrev = () => {
 
 slideNext.addEventListener('click', getSlideNext);
 slidePrev.addEventListener('click', getSlidePrev);
+
+
 
 export default backgroundBlock;

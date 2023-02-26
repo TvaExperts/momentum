@@ -1,17 +1,17 @@
 const langArr = {
-    'great-night' : {
-        'ru' : 'Доброй ночи,',
+    'greet-night' : {
+        'ru' : 'Спокойной ночи,',
         'en' : 'Good night,'
     },
-    'great-morning' : {
+    'greet-morning' : {
         'ru' : 'Доброе утро,',
         'en' : 'Good morning,'
     },
-    'great-afternoon' : {
+    'greet-afternoon' : {
         'ru' : 'Добрый день,',
         'en' : 'Good afternoon,'
     },
-    'great-evening' : {
+    'greet-evening' : {
         'ru' : 'Доброго вечера,',
         'en' : 'Good evening,'
     },
@@ -33,11 +33,11 @@ const langArr = {
         'ru' : 'Дата',
         'en' : 'Date'
     },
-    'settings-greating' : {
+    'settings-greeting' : {
         'ru' : 'Приветствие',
-        'en' : 'Greatings'
+        'en' : 'Greetings'
     },
-    'settings-quote' : {
+    'settings-quotes' : {
         'ru' : 'Цитаты',
         'en' : 'Quotes'
     },
@@ -103,8 +103,10 @@ const langArr = {
         'en' : 'Enter the correct city!'
     },
 
-
-
+    'city-def' : {
+        'ru' : 'Минск',
+        'en' : 'Minsk'
+    },
 
 
 }

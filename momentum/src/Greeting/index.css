@@ -1,5 +1,5 @@
 
-.greating__wrapper {
+.greeting__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,12 +13,16 @@
     font-family: 'Arial-MT';
     font-size: 100px;
     letter-spacing: -4px;  
+    opacity: .8;
+    transition: all .3s ease;
   }
   
   .date {
     min-height: 28px;
     font-size: 24px;
     margin-bottom: 20px;
+    opacity: .8;
+    transition: all .3s ease;
   }
   
   .greeting-container {
@@ -29,6 +33,8 @@
     min-height: 48px;
     width: 100vw;
     font-size: 40px;
+    opacity: .8;
+    transition: all .3s ease;
   }
   
   .greeting {

@@ -5,15 +5,15 @@ import playList  from './playList';
 
 const player = htmlToElement(Player);
 
-
 const playButton = player.querySelector('.play');
 const playPrevButton = player.querySelector('.play-prev');
 const playNextButton = player.querySelector('.play-next');
-
 const playListBlock = player.querySelector('.play-list');
-
-const progressBarBlock = player.querySelector('.progress-bar');
-const progressFillBlock = player.querySelector('.progress-fill');
+const volumeIco = player.querySelector('.volume-ico');
+const volSlider = player.querySelector('.volume-slider');
+const volFader = player.querySelector('.volume-fader');
+const progressSlider = player.querySelector('.progress-slider');
+const progressFader = player.querySelector('.progress-fader');
 
 const audio = new Audio();
 
@@ -21,55 +21,21 @@ let isPlay = false;
 let numSong = 0;
 let currentTime = 0;
 let isRunUpdater = false;
-let volumeValue = 1;
-
-
-const progressBlock = player.querySelector('.progress-bar');
-
-const clickProgress = (event) => {
-  const percentage = (event.x - 20) / 320;
-  const newTime = convertSongDurationInSec(playList[numSong].duration) * percentage;
-  currentTime = newTime;
-  audio.currentTime = currentTime;
-  updateInfo();
-  playAudio();
-}
-progressBlock.addEventListener('click', clickProgress);
-
-
-const volumeIco = player.querySelector('.volume-ico');
-
 
 const toggleMute = () => {
   volumeIco.classList.toggle('mute');
   if (audio.muted) {
-    audio.muted=false;
-    showVolumeValue();
+    audio.muted = false;
+    volFader.value = audio.volume * 1000;
+    volSlider.style.width = Math.round(audio.volume * 70).toString() + 'px';
   } else {
     audio.muted = true;
-    volumeFill.style.width = `0px`;
+    volFader.value = 0;
+    volSlider.style.width = `0px`;
   }
-  
 }
 
 volumeIco.addEventListener('click', toggleMute)
-
-const volumeFill = player.querySelector('.volume-bar-fill');
-const volumeBar = player.querySelector('.volume-bar');
-
-const showVolumeValue = () => {
-  const fillWidth = Math.round(volumeValue* 70);
-  volumeFill.style.width = `${fillWidth}px`;
-}
-
-const setNewVolumeValue = (event) => {
-  
-  volumeValue = (event.x - 160) / 70;
-  audio.volume = volumeValue;
-  showVolumeValue();
-}
-
-volumeBar.addEventListener('click', setNewVolumeValue)
 
 const playAudio = () => {
   if (isPlay) {
@@ -87,13 +53,11 @@ const playAudio = () => {
       .catch(error => {
       });
     }
-    //showProgress();
+    showProgress();
   } else {
     audio.pause();
     currentTime = audio.currentTime;
-    
   }
-  
 }
 
 const removePauseMini = () => {
@@ -120,10 +84,8 @@ const clickBtnPlay = () => {
     removePauseMini();
     isPlay = false;
   } else {
-    showVolumeValue();
     playButton.classList.add('pause');
     isPlay = true;
-    
     addPauseMini();
   }
   updateInfo();
@@ -164,17 +126,14 @@ playListBlock.addEventListener('click', clickPlaySong)
 const clickBtnNextSong = () => {
   clearActiveSongStile();
   removePauseMini();
-
   numSong++;
   if (numSong >= playList.length) numSong = 0;
-
   isPlay = true;
   currentTime = 0;
   audio.currentTime=currentTime;
   playButton.classList.add('pause');
   addPauseMini();
   addActiveSongStyle();
-  
   playAudio();
 }
 
@@ -189,7 +148,6 @@ const updateInfo = () =>
   const durationInfo = player.querySelector('.duration');
   durationInfo.innerText = `${convertSecondsInMinStr(currTime)}/${playList[numSong].duration}`;
   showProgress();
-
 }
 
 const startUpdaterInfo = () => {
@@ -197,19 +155,14 @@ const startUpdaterInfo = () => {
   setTimeout(startUpdaterInfo, 1000);
 }
 
-
-
 const clickBtnPrevSong = () => {
   clearActiveSongStile();
   removePauseMini();
-
   numSong--;
   if (numSong < 0) numSong = playList.length - 1;
-
   isPlay = true;
   currentTime = 0;
   audio.currentTime = currentTime;
-
   playButton.classList.add('pause');
   addPauseMini();
   addActiveSongStyle();
@@ -218,7 +171,6 @@ const clickBtnPrevSong = () => {
 
 playNextButton.addEventListener('click', clickBtnNextSong);
 playPrevButton.addEventListener('click', clickBtnPrevSong);
-
 playButton.addEventListener('click', clickBtnPlay);
 
 const createShortSongTitle= (title, maxLength) => {
@@ -229,13 +181,11 @@ const createShortSongTitle= (title, maxLength) => {
   }
 }
 
-
 const clearActiveSongStile = () => {
   const liItems = player.querySelectorAll('.play-item');
   liItems.forEach (item => {
     if (item.classList.contains('item-active')) {
       item.classList.remove('item-active');
-
     }
   })
 }
@@ -253,19 +203,10 @@ const addActiveSongStyle = () => {
   songTitle.innerHTML = `${numSong+1}. ${createShortSongTitle(playList[numSong].title, 23)}`;
 }
 
-
-
-
 const changeActiveItem =() => {
   clearActiveSongStile();
   addActiveSongStyle();
 }
-
-
-
-
-
-
 
 audio.addEventListener('ended', (event) => {
   clickBtnNextSong();
@@ -276,15 +217,10 @@ const convertSongDurationInSec = (duration) => {
 }
 
 const showProgress = () => {
-  //if (!isPlay) return;
-  const maxWidth = progressBarBlock.clientWidth;
   const songDurationInSec = convertSongDurationInSec(playList[numSong].duration);
-  let fillWidth = Math.round(audio.currentTime / songDurationInSec * maxWidth);
-  if (fillWidth > maxWidth) fillWidth = maxWidth;
-  progressFillBlock.style.width = `${fillWidth}px`;
-  //setTimeout(showProgress, 1000);
+  progressFader.value = Math.round(audio.currentTime / songDurationInSec * 1000)
+  progressSlider.style.width = Math.round(320 * progressFader.value / 1000).toString()+'px';
 }
-
 
 const loadPlayList = () => {
   playList.forEach((song , i) => {
@@ -306,6 +242,32 @@ const loadPlayList = () => {
   })
 }
 
-loadPlayList();
+const loadPlayer = () => { 
+  if (localStorage.getItem('player') === 'false') {
+    player.classList.add('hide');
+  }
+  loadPlayList();
+}
+
+const changeVolumeValue = () => {
+  audio.volume = volFader.value / 1000;
+  volSlider.style.width = Math.round(audio.volume * 70).toString() + 'px';
+}
+
+volFader.addEventListener('input', changeVolumeValue);
+
+const changeProgressValue = () => {
+  const percentage = progressFader.value / 1000;
+  progressSlider.style.width = Math.round(320 * percentage).toString()+'px';
+  const newTime = convertSongDurationInSec(playList[numSong].duration) * percentage;
+  currentTime = newTime;
+  audio.currentTime = currentTime;
+  updateInfo();
+  playAudio();
+}
+
+progressFader.addEventListener('input', changeProgressValue);
+
+loadPlayer();
 
 export default player;

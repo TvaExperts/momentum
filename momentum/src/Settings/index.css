@@ -1,21 +1,35 @@
+.settings-wrapper {
+  position: relative;
+}
+
+.show .settings {
+  height: 240px;
+  opacity: .8;
+}
+
+
 .settings-ico {
   width: 30px;
   height: 30px;
-  position: relative;
   background-size: 32px 32px;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("../../assets/svg/settings.svg");
   opacity: .8;
-
+  cursor: pointer;
 }
 
 .settings {
   position: absolute;
+  z-index: 10;
   width: 220px;
-  height: 250px;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
   top: -250px;
   background: rgba(55, 55, 54, 0.719);
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
 }
 
 .setting-list {

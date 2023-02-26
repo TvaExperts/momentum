@@ -1,8 +1,8 @@
 /*!**************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Greating/index.css ***!
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/Greeting/index.css ***!
   \**************************************************************************/
 
-.greating__wrapper {
+.greeting__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,12 +16,16 @@
     font-family: 'Arial-MT';
     font-size: 100px;
     letter-spacing: -4px;  
+    opacity: .8;
+    transition: all .3s ease;
   }
   
   .date {
     min-height: 28px;
     font-size: 24px;
     margin-bottom: 20px;
+    opacity: .8;
+    transition: all .3s ease;
   }
   
   .greeting-container {
@@ -32,6 +36,8 @@
     min-height: 48px;
     width: 100vw;
     font-size: 40px;
+    opacity: .8;
+    transition: all .3s ease;
   }
   
   .greeting {
@@ -104,6 +110,8 @@
   \************************************************************************/
 .player {
   width: 320px;
+  opacity: .8;
+  transition: all .6s ease;
 }
 
 .player-header {
@@ -233,7 +241,8 @@
 
 .player-icon,
 .slider-icon,
-.change-quote {
+.change-quote,
+.settings-ico {
   width: 32px;
   height: 32px;
   background-size: 32px 32px;
@@ -249,13 +258,15 @@
 
 .player-icon:hover,
 .slider-icon:hover,
-.change-quote:hover {
+.change-quote:hover,
+.settings-ico:hover {
   opacity: 1;
 }
 
 .player-icon:active,
 .slider-icon:active,
-.change-quote:active {
+.change-quote:active,
+.settings-ico:active {
   border: 0;
   outline: 0;  
   transform: scale(1.1);
@@ -285,6 +296,66 @@
 
 .play-next {
   background-image: url(827ac099ee6909e6267e.svg);
+}
+
+.volume-slider {
+  opacity: .8;
+  background-color: white;
+  border-radius: 2px;
+  width: 70px;
+  height: 6px;
+  left: 4px;
+  position: relative;
+}
+
+.volume-fader {
+  position: relative;
+  top: -8px;
+  width: 70px;
+  height: 6px;
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: none;
+  border-radius: 4px;
+}
+
+.volume-fader::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+}
+
+
+
+.progress-slider {
+  opacity: .8;
+  background-color: white;
+  border-radius: 2px;
+  width: 0px;
+  height: 6px;
+  margin: 6px 0;
+  position: relative;
+}
+
+.progress-fader {
+  position: relative;
+  top: -8px;
+  width: 320px;
+  height: 6px;
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: none;
+  border-radius: 4px;
+}
+
+.progress-fader::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
 }
 /*!**********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/Weather/owfont-regular.css ***!
@@ -858,8 +929,11 @@
   align-items: flex-start;
   row-gap: 5px;
   width: 180px;
-  min-height: 180px;  
+  min-height: 180px; 
   text-align: left;
+  opacity: .8;
+  transition: all .3s ease;
+
 }
 
 .weather-error {
@@ -889,6 +963,9 @@
   outline: 0;
   border-bottom: 1px solid #fff;
   background-color: transparent;
+  transition: all .3s ease;
+
+
 }
 
 .city::placeholder {  
@@ -896,6 +973,29 @@
   color: #fff;
   opacity: .6;
 }
+
+.hide .city {
+  height: 0;
+  padding: 0;
+}
+
+.hide .weather-error {
+  height: 0;
+  padding: 0;
+}
+.hide .description-container {
+  height: 0;
+  padding: 0;
+}
+.hide .wind {
+  height: 0;
+  padding: 0;
+}
+.hide .humidity {
+  height: 0;
+  padding: 0;
+}
+
 /*!************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/Quotes/index.css ***!
   \************************************************************************/
@@ -904,6 +1004,8 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  opacity: .8;
+  transition: all .3s ease;
 }
 
 .change-quote {
@@ -921,24 +1023,38 @@
 /*!**************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/Settings/index.css ***!
   \**************************************************************************/
+.settings-wrapper {
+  position: relative;
+}
+
+.show .settings {
+  height: 240px;
+  opacity: .8;
+}
+
+
 .settings-ico {
   width: 30px;
   height: 30px;
-  position: relative;
   background-size: 32px 32px;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url(0d59317bbb1106689867.svg);
   opacity: .8;
-
+  cursor: pointer;
 }
 
 .settings {
   position: absolute;
+  z-index: 10;
   width: 220px;
-  height: 250px;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
   top: -250px;
   background: rgba(55, 55, 54, 0.719);
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
 }
 
 .setting-list {
@@ -1071,6 +1187,13 @@ body {
   height: 30vh;
   min-height: 160px;  
   padding: 20px;
+}
+
+.hide {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
 }
 
 /*# sourceMappingURL=main.css.map*/

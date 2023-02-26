@@ -41,8 +41,22 @@ const convertDegreeToDirection = (degree) => {
     return langArr['n'][localStorage.getItem('language')];
 }
 
-async function getWeather() { 
+const loadWeatherBlock = () => {
 
+    if (localStorage.getItem('weather') === 'false') {
+        weather.classList.add('hide');
+    }
+
+    if (!localStorage.getItem('city')) {
+        localStorage.setItem('city', 'Минск');
+    }
+    cityBlock.value = localStorage.getItem('city');
+    getWeather();
+}
+
+async function getWeather() { 
+    
+    
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityBlock.value}&lang=${localStorage.getItem('language')}&appid=${WEATHER_API_KEY}&units=metric`;
     weatherIconBlock.className = 'weather-icon owf';
     weatherErrorBlock.textContent = '';
@@ -54,7 +68,7 @@ async function getWeather() {
         weatherDescriptionBlock.textContent = upperCaseFirst(data.weather[0].description);
         humidityBlock.textContent = `${langArr['humidity'][localStorage.getItem('language')]}: ${data.main.humidity}%`;
         windBlock.textContent = `${langArr['wind'][localStorage.getItem('language')]} ${convertDegreeToDirection(data.wind.deg)}, ${Math.round(data.wind.speed)} ${langArr['speed'][localStorage.getItem('language')]}`;
-        
+        localStorage.setItem('city', cityBlock.value);
     }
     catch (err) {
         temperatureBlock.textContent = '';
@@ -64,8 +78,9 @@ async function getWeather() {
         weatherErrorBlock.textContent = langArr['error'][localStorage.getItem('language')];
     }
 }
+loadWeatherBlock();
 
-getWeather(); 
+
 cityBlock.addEventListener('change', getWeather);
 
 export default weather;

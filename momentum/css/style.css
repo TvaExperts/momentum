@@ -55,3 +55,10 @@ body {
   min-height: 160px;  
   padding: 20px;
 }
+
+.hide {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+}
