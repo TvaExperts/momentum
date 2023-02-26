@@ -226,14 +226,22 @@ const FLICKR_API_KEY = 'e42abac3a12ae59ea2cda0d295b92890';
 
 
 
-setBg();
+
 
 
 const getRandomInt = (max) => {
     return Math.floor(Math.random() * max);
 }
-
 let randomImageNum = getRandomInt(20) + 1;
+const getTimeOfDay = () => {
+    const date = new Date();
+    const hours = date.getHours();
+    if (hours < 6) return 'night';
+    if (hours < 12) return 'morning';
+    if (hours < 18) return 'afternoon';
+    return 'evening';
+}
+setBg();
 
 async function setBg () {
     if(!localStorage.getItem('language')) {
@@ -251,14 +259,7 @@ async function setBg () {
     }; 
 }
 
-const getTimeOfDay = () => {
-    const date = new Date();
-    const hours = date.getHours();
-    if (hours < 6) return 'night';
-    if (hours < 12) return 'morning';
-    if (hours < 18) return 'afternoon';
-    return 'evening';
-}
+
 
 async function getLinkToImage() {
     
