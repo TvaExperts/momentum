@@ -1,3 +1,10 @@
+
+
+if(!localStorage.getItem('language')) {
+    localStorage.setItem('language', 'en');
+    console.log('Привет!')
+}
+
 import Greeting from './Greeting';
 import Background from './Background';
 import Player from './Player';
@@ -26,7 +33,4 @@ headerBlock.append(Weather);
 
 mainBlock.append(Background);
 mainBlock.append(Greeting);
-
-
-
 
