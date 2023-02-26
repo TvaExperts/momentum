@@ -36,6 +36,15 @@ async function setBg () {
     }; 
 }
 
+const getTimeOfDay = () => {
+    const date = new Date();
+    const hours = date.getHours();
+    if (hours < 6) return 'night';
+    if (hours < 12) return 'morning';
+    if (hours < 18) return 'afternoon';
+    return 'evening';
+}
+
 async function getLinkToImage() {
     
     let urlGet;
@@ -62,14 +71,6 @@ async function getLinkToImage() {
     return urlImage;
 }
 
-const getTimeOfDay = () => {
-    const date = new Date();
-    const hours = date.getHours();
-    if (hours < 6) return 'night';
-    if (hours < 12) return 'morning';
-    if (hours < 18) return 'afternoon';
-    return 'evening';
-}
 
 
 const getSlideNext = () => {
