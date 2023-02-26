@@ -23,7 +23,10 @@ let randomImageNum = getRandomInt(20) + 1;
 async function setBg () {
     if(!localStorage.getItem('language')) {
         localStorage.setItem('language', 'en');
-        console.log('Привет!')
+        
+    }
+    if(!localStorage.getItem('photo-source')) {
+        localStorage.setItem('photo-source', 'github');
     }
     const urlImage = await getLinkToImage();
     const img = new Image();

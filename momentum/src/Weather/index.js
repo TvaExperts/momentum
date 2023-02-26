@@ -48,7 +48,7 @@ const loadWeatherBlock = () => {
     }
 
     if (!localStorage.getItem('city')) {
-        localStorage.setItem('city', 'Минск');
+        localStorage.setItem('city', 'Minsk');
     }
     cityBlock.value = localStorage.getItem('city');
     getWeather();

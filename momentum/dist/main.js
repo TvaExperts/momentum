@@ -238,7 +238,10 @@ let randomImageNum = getRandomInt(20) + 1;
 async function setBg () {
     if(!localStorage.getItem('language')) {
         localStorage.setItem('language', 'en');
-        console.log('Привет!')
+        
+    }
+    if(!localStorage.getItem('photo-source')) {
+        localStorage.setItem('photo-source', 'github');
     }
     const urlImage = await getLinkToImage();
     const img = new Image();
@@ -1091,7 +1094,7 @@ const loadWeatherBlock = () => {
     }
 
     if (!localStorage.getItem('city')) {
-        localStorage.setItem('city', 'Минск');
+        localStorage.setItem('city', 'Minsk');
     }
     cityBlock.value = localStorage.getItem('city');
     getWeather();
@@ -1377,6 +1380,12 @@ headerBlock.append(_Weather__WEBPACK_IMPORTED_MODULE_4__["default"]);
 
 mainBlock.append(_Background__WEBPACK_IMPORTED_MODULE_2__["default"]);
 mainBlock.append(_Greeting__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+console.log('Адаптива пока нет');
+console.log('Появление и сокрытие объектов тоже порой не так как хотелось бы')
+console.log('Дополнительной фичи тоже нет(')
+console.log('Если не все объекты прогрузились - обновить лучше страницу - криво сделал работу с локалсторадж, но уже некогда поправлять')
+console.log('Как-то не расчитал время или пошел не по той дорожке где-то в начале пути')
 
 
 })();
