@@ -35,9 +35,12 @@ tagPhoto.addEventListener('change' , changeTagPhoto);
 
 
 const getLocalStorage = () => {
+
     if(!localStorage.getItem('language')) {
         localStorage.setItem('language', 'en');
+        console.log('Привет!')
     }
+
     if (localStorage.getItem('language') === 'ru') {
         selectLang.selectedIndex = 0;
     } else {

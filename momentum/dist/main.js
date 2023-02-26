@@ -852,9 +852,12 @@ tagPhoto.addEventListener('change' , changeTagPhoto);
 
 
 const getLocalStorage = () => {
+
     if(!localStorage.getItem('language')) {
         localStorage.setItem('language', 'en');
+        console.log('Привет!')
     }
+
     if (localStorage.getItem('language') === 'ru') {
         selectLang.selectedIndex = 0;
     } else {
@@ -1348,8 +1351,13 @@ __webpack_require__.r(__webpack_exports__);
 const headerBlock = document.querySelector('.header');
 const mainBlock = document.querySelector('.main');
 const footerBlock = document.querySelector('.footer');
+footerBlock.append(_Settings__WEBPACK_IMPORTED_MODULE_5__["default"]);
+footerBlock.append(_Quotes__WEBPACK_IMPORTED_MODULE_4__["default"]);
 
 
+const div = document.createElement('div');
+div.innerHTML = `<a href="https://rs.school/js/" target="_blank">RS</a>`;
+footerBlock.append(div);
 
 headerBlock.append(_Player__WEBPACK_IMPORTED_MODULE_2__["default"]);
 headerBlock.append(_Weather__WEBPACK_IMPORTED_MODULE_3__["default"]);
@@ -1357,8 +1365,8 @@ headerBlock.append(_Weather__WEBPACK_IMPORTED_MODULE_3__["default"]);
 mainBlock.append(_Background__WEBPACK_IMPORTED_MODULE_1__["default"]);
 mainBlock.append(_Greeting__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
-footerBlock.prepend(_Quotes__WEBPACK_IMPORTED_MODULE_4__["default"]);
-footerBlock.prepend(_Settings__WEBPACK_IMPORTED_MODULE_5__["default"]);
+
+
 
 
 })();
