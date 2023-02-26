@@ -141,6 +141,58 @@ const loadSettings = () => {
     const photoBlock = settings.querySelector('.settings-photo');
     photoBlock.innerText = langArr['settings-photo'][localStorage.getItem('language')];
 
+
+
+    if(!localStorage.getItem('language')) {
+        localStorage.setItem('language', 'en');
+        console.log('Привет!')
+    }
+
+    if (localStorage.getItem('language') === 'ru') {
+        selectLang.selectedIndex = 0;
+    } else {
+        selectLang.selectedIndex = 1;
+    }
+
+    if(localStorage.getItem('tag-photo')) {
+        tagPhoto.value = localStorage.getItem('tag-photo');
+    }
+
+
+
+    if(!localStorage.getItem('photo-source')) {
+        localStorage.setItem('photo-source', 'github');
+    }
+
+    switch (localStorage.getItem('photo-source')) {
+        case 'github': selectSourcePhoto.selectedIndex = 0;
+            break;
+        case 'unsplash': selectSourcePhoto.selectedIndex = 1;
+            break;
+        case 'flickr': selectSourcePhoto.selectedIndex = 2;
+            break;
+    }
+
+    if(!localStorage.getItem('time')) {
+        localStorage.setItem('time', 'true');
+    }
+    if(!localStorage.getItem('date')) {
+        localStorage.setItem('date', 'true');
+    }
+    if(!localStorage.getItem('greeting')) {
+        localStorage.setItem('greeting', 'true');
+    }
+    if(!localStorage.getItem('quotes')) {
+        localStorage.setItem('quotes', 'true');
+    }
+    if(!localStorage.getItem('weather')) {
+        localStorage.setItem('weather', 'true');
+    }
+    if(!localStorage.getItem('player')) {
+        localStorage.setItem('player', 'true');
+    }
+
+
     const cbTime = settings.querySelector('.cb-time');
     cbTime.checked = (localStorage.getItem('time') === 'true');
     cbTime.addEventListener('change' , changeTime)
