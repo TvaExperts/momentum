@@ -11,6 +11,7 @@ const FLICKR_API_KEY = 'e42abac3a12ae59ea2cda0d295b92890';
 
 
 
+setBg();
 
 
 const getRandomInt = (max) => {
@@ -20,6 +21,10 @@ const getRandomInt = (max) => {
 let randomImageNum = getRandomInt(20) + 1;
 
 async function setBg () {
+    if(!localStorage.getItem('language')) {
+        localStorage.setItem('language', 'en');
+        console.log('Привет!')
+    }
     const urlImage = await getLinkToImage();
     const img = new Image();
     img.src = urlImage;
@@ -63,7 +68,6 @@ const getTimeOfDay = () => {
     return 'evening';
 }
 
-setBg();
 
 const getSlideNext = () => {
     if (localStorage.getItem('photo-source')==='github') {

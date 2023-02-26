@@ -1,16 +1,13 @@
 
 
-if(!localStorage.getItem('language')) {
-    localStorage.setItem('language', 'en');
-    console.log('Привет!')
-}
 
+import Settings from './Settings';
 import Greeting from './Greeting';
 import Background from './Background';
 import Player from './Player';
 import Weather from './Weather';
 import Quotes from './Quotes';
-import Settings from './Settings';
+
 
 
 

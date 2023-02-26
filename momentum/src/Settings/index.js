@@ -15,6 +15,8 @@ window.addEventListener('load', () => {
 });
 
 
+
+
 const selectLang = settings.querySelector('.settings-lang');
 const selectSourcePhoto = settings.querySelector('.settings-source');
 
@@ -118,7 +120,10 @@ const changeSourcePhoto = () => {
 selectSourcePhoto.addEventListener('change', changeSourcePhoto)
 
 const loadSettings = () => {
-        
+    if(!localStorage.getItem('language')) {
+        localStorage.setItem('language', 'en');
+        console.log('Привет!')
+    }
     const timeBlock = settings.querySelector('.settings-time');
     timeBlock.innerText = langArr['settings-time'][localStorage.getItem('language')];
     const dateBlock = settings.querySelector('.settings-date');

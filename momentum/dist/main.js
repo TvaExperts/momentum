@@ -226,6 +226,7 @@ const FLICKR_API_KEY = 'e42abac3a12ae59ea2cda0d295b92890';
 
 
 
+setBg();
 
 
 const getRandomInt = (max) => {
@@ -235,6 +236,10 @@ const getRandomInt = (max) => {
 let randomImageNum = getRandomInt(20) + 1;
 
 async function setBg () {
+    if(!localStorage.getItem('language')) {
+        localStorage.setItem('language', 'en');
+        console.log('Привет!')
+    }
     const urlImage = await getLinkToImage();
     const img = new Image();
     img.src = urlImage;
@@ -278,7 +283,6 @@ const getTimeOfDay = () => {
     return 'evening';
 }
 
-setBg();
 
 const getSlideNext = () => {
     if (localStorage.getItem('photo-source')==='github') {
@@ -832,6 +836,8 @@ window.addEventListener('load', () => {
 });
 
 
+
+
 const selectLang = settings.querySelector('.settings-lang');
 const selectSourcePhoto = settings.querySelector('.settings-source');
 
@@ -935,7 +941,10 @@ const changeSourcePhoto = () => {
 selectSourcePhoto.addEventListener('change', changeSourcePhoto)
 
 const loadSettings = () => {
-        
+    if(!localStorage.getItem('language')) {
+        localStorage.setItem('language', 'en');
+        console.log('Привет!')
+    }
     const timeBlock = settings.querySelector('.settings-time');
     timeBlock.innerText = _lang__WEBPACK_IMPORTED_MODULE_3__["default"]["settings-time"][localStorage.getItem('language')];
     const dateBlock = settings.querySelector('.settings-date');
@@ -1329,13 +1338,17 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Greeting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Greeting */ "./src/Greeting/index.js");
-/* harmony import */ var _Background__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Background */ "./src/Background/index.js");
-/* harmony import */ var _Player__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Player */ "./src/Player/index.js");
-/* harmony import */ var _Weather__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Weather */ "./src/Weather/index.js");
-/* harmony import */ var _Quotes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Quotes */ "./src/Quotes/index.js");
-/* harmony import */ var _Settings__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Settings */ "./src/Settings/index.js");
+/* harmony import */ var _Settings__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Settings */ "./src/Settings/index.js");
+/* harmony import */ var _Greeting__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Greeting */ "./src/Greeting/index.js");
+/* harmony import */ var _Background__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Background */ "./src/Background/index.js");
+/* harmony import */ var _Player__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Player */ "./src/Player/index.js");
+/* harmony import */ var _Weather__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Weather */ "./src/Weather/index.js");
+/* harmony import */ var _Quotes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Quotes */ "./src/Quotes/index.js");
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../css/style.css */ "./css/style.css");
+
+
+
+
 
 
 
@@ -1351,22 +1364,19 @@ __webpack_require__.r(__webpack_exports__);
 const headerBlock = document.querySelector('.header');
 const mainBlock = document.querySelector('.main');
 const footerBlock = document.querySelector('.footer');
-footerBlock.append(_Settings__WEBPACK_IMPORTED_MODULE_5__["default"]);
-footerBlock.append(_Quotes__WEBPACK_IMPORTED_MODULE_4__["default"]);
+footerBlock.append(_Settings__WEBPACK_IMPORTED_MODULE_0__["default"]);
+footerBlock.append(_Quotes__WEBPACK_IMPORTED_MODULE_5__["default"]);
 
 
 const div = document.createElement('div');
 div.innerHTML = `<a href="https://rs.school/js/" target="_blank">RS</a>`;
 footerBlock.append(div);
 
-headerBlock.append(_Player__WEBPACK_IMPORTED_MODULE_2__["default"]);
-headerBlock.append(_Weather__WEBPACK_IMPORTED_MODULE_3__["default"]);
+headerBlock.append(_Player__WEBPACK_IMPORTED_MODULE_3__["default"]);
+headerBlock.append(_Weather__WEBPACK_IMPORTED_MODULE_4__["default"]);
 
-mainBlock.append(_Background__WEBPACK_IMPORTED_MODULE_1__["default"]);
-mainBlock.append(_Greeting__WEBPACK_IMPORTED_MODULE_0__["default"]);
-
-
-
+mainBlock.append(_Background__WEBPACK_IMPORTED_MODULE_2__["default"]);
+mainBlock.append(_Greeting__WEBPACK_IMPORTED_MODULE_1__["default"]);
 
 
 })();
