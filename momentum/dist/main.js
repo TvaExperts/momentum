@@ -373,7 +373,7 @@ const upperCaseFirst = (str)=> {
 
 const showDate = () => {
     const date = new Date();
-    const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Moscow'};
+    const options = {weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Europe/Moscow'};
     const langSetting = (localStorage.getItem('language') === 'en') ? 'en-EN' : 'ru-RU';
     dateBlock.textContent = upperCaseFirst(date.toLocaleDateString(langSetting, options));
 }
