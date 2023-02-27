@@ -8,6 +8,7 @@
 .show .settings {
   height: 240px;
   opacity: .8;
+  visibility:visible;
 }
 
 
@@ -26,8 +27,9 @@
   position: absolute;
   z-index: 10;
   width: 220px;
-  height: 0px;
+
   opacity: 0;
+  visibility: hidden;
   overflow: hidden;
   top: -250px;
   background: rgba(55, 55, 54, 0.719);
@@ -1082,27 +1084,6 @@
   opacity: .6;
 }
 
-.hide .city {
-  height: 0;
-  padding: 0;
-}
-
-.hide .weather-error {
-  height: 0;
-  padding: 0;
-}
-.hide .description-container {
-  height: 0;
-  padding: 0;
-}
-.hide .wind {
-  height: 0;
-  padding: 0;
-}
-.hide .humidity {
-  height: 0;
-  padding: 0;
-}
 
 /*!************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/Quotes/index.css ***!
@@ -1190,10 +1171,10 @@ body {
 }
 
 .hide {
-  height: 0;
+
   opacity: 0;
-  overflow: hidden;
-  transition: all .3s ease-in-out;
+  visibility: hidden;
+
 }
 
 a {
